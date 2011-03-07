@@ -1,0 +1,222 @@
+a:link
+{
+    color: black;
+    text-decoration: none;
+}
+a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:active
+{ 
+    color: #571f40;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #571f40;
+    text-decoration: underline;
+}
+
+
+.banner
+{
+    font-family: "Helvetica";
+    font-weight: 900;
+    width: 100%;
+
+    text-align: center;
+
+    background: url("/images/banner.png") repeat scroll left top #d4cd97;
+    font-weight: bold;
+    height: 70px;
+    padding-left: 10px;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    
+    border-top: 1px solid #5f4a34;
+    border-bottom: 1px solid #5f4a34;
+
+}
+.bannerTitle
+{
+    font-size: 32px;
+}
+.bannerFoot
+{
+    font-size: 18px;
+}
+
+.diamond
+{
+    font-family: inherit; 
+    font-weight: inherit;
+    font-size: 10px;
+}
+
+body
+{
+    background: scroll left top #ece7b8;
+}
+
+.leaf1
+{
+    padding-right: 10px;
+  
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.navBanner
+{
+    font-family: "Helvetica";
+    font-weight: 900;
+    width: 100%;
+
+    background: scroll left top #d4cd97;
+    font-weight: bold;
+    height: 25px;
+    padding-left: 10px;
+  
+    position: absolute;
+    top: 71px;
+    left: 0;
+
+
+    text-align: center;
+
+    border-top: 1px solid #5f4a34;
+
+    /* for non-css3 browsers */
+    /* background: #cb6; */
+    /* background: #d4cd97; */
+                /* d4cd97 */
+
+    /* for IE */ 
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeecbb', endColorstr='#fdf871'); */
+    /* for webkit browsers */
+    /* background: -webkit-gradient(linear, left top, right top, from(#eee), to(#ff7)); */
+    /* for firefox 3.6+ */
+    /* background: -moz-linear-gradient(left,  #eeb,  #ff7); */
+
+}
+
+.tabsHolder
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 0px;
+
+    left: 0;
+
+}
+
+.tabs
+{
+
+    background: #d4cd97;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    width: 100px;
+
+}
+
+.tabSelected
+{
+
+    border-top: 1px solid #5f4a34;
+    border-left: 1px solid #5f4a34;
+    border-right: 1px solid #5f4a34;
+
+    background: #ece7b8;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    width: 100px;
+
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -khtml-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.homeColumn
+{
+    margin-top: 97px;
+
+    width: 700px;
+    height: 800px;
+    background: scroll #ffffff;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picColumn
+{
+    padding-top: 15px;
+    float: left;
+    width: 300px;
+    height: 800px;
+    background: #ece7b8;
+}
+
+.textColumn
+{
+
+    padding-left: 15px;
+    font-family: "times";
+
+    font-size: 12pt;
+
+    float: right;
+    width: 385px;
+    height: 800px;
+    background: #ece7b8;
+}
+
+.addressHeaderText
+{
+    padding-top: 15px;
+
+    font-family: "Helvetica";
+    font-weight: 900;
+  
+    border-bottom: 2px solid #000000;
+
+    font-size: 20px;
+
+    text-align: center;
+
+}
+
+.addressText
+{
+    font-family: "Helvetica";
+    font-weight: 900;
+    
+    font-size: 18px;
+
+    text-align: center;
+
+}
