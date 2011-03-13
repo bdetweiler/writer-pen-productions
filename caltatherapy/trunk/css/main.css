@@ -1,3 +1,4 @@
+
 a:link
 {
     color: black;
@@ -21,6 +22,20 @@ a:hover
     text-decoration: underline;
 }
 
+p::selection {
+	background: #5f4a34;
+	color: #fff;
+}
+
+p::-moz-selection {
+	background: #5f4a34;
+	color:#fff;
+}
+
+p::-webkit-selection {
+	background: #5f4a34;
+	color:#fff;
+}
 
 .banner
 {
@@ -39,16 +54,16 @@ a:hover
     top: 0;
     left: 0;
 
-
-    
     border-top: 1px solid #5f4a34;
     border-bottom: 1px solid #5f4a34;
 
 }
+
 .bannerTitle
 {
     font-size: 32px;
 }
+
 .bannerFoot
 {
     font-size: 18px;
@@ -165,8 +180,8 @@ body
     margin-top: 97px;
 
     width: 700px;
-    height: 800px;
-    background: scroll #ffffff;
+    height: 815px;
+    background: scroll #ece7b8;
 
     margin-left: auto;
     margin-right: auto;
@@ -195,6 +210,14 @@ body
     background: #ece7b8;
 }
 
+.hours
+{
+    padding-top: 15px;
+    font-family: "times";
+    font-size: 12pt;
+    background: #ece7b8;
+}
+
 .addressHeaderText
 {
     padding-top: 15px;
@@ -218,5 +241,23 @@ body
     font-size: 18px;
 
     text-align: center;
+
+}
+
+.creditcards
+{
+    background: url("/images/cclogo.jpg") scroll left top #ffffff;
+    width: 385px;
+    height: 73px;
+
+}
+
+.footer
+{
+    font-family: "Helvetica";
+    font-weight: 100;
+    font-size: 10px;
+    text-align: center;
+    float: bottom;
 
 }
