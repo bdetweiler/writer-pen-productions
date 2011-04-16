@@ -18,8 +18,8 @@ a:active
 
 a:hover
 {
-    color: #571f40;
-    text-decoration: underline;
+    color: #5f4a34;
+    text-decoration: none;
 }
 
 p::selection {
