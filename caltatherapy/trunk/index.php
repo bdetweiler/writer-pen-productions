@@ -159,7 +159,6 @@
             </div>
         </div>
 
-        <div id="footer" class="footer">&copy;2011&nbsp;MaryAnn Calta, LCSW, LHMP, CMSW, M.Div</div>
     </body>
 </html>
 

@@ -28,8 +28,8 @@ a {
 body
 {
     /*background: scroll left top #ece7b8;*/
-    /* background-image: url(http://localhost/caltatherapy/images/clouds_background_reduced.jpg); */
-    background: url(http://localhost/caltatherapy/images/clouds_background_reduced.jpg) no-repeat;
+    /* background-image: url(/images/clouds_background_reduced.jpg); */
+    background: url(/images/clouds_background_reduced.jpg) no-repeat;
     background-attachment: fixed;
     background-position: left center;
 }
@@ -382,7 +382,7 @@ img.macImage
 /*
 .creditcards
 {
-    background: url("http://localhost/caltatherapy/images/visa_mastercard_logo.gif") no-repeat left top #ffffff;
+    background: url(/images/visa_mastercard_logo.gif) no-repeat left top #ffffff;
     width: auto;
     height: auto;
 
