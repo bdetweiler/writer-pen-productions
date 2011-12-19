@@ -3,10 +3,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
-        <script type="text/JavaScript" src="js/jquery-1.6.4.min.js" />
+        <link rel="stylesheet" href="/js/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/js/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+        <!-- <link rel="stylesheet" href="style.css" type="text/css" media="screen" /> -->
+
+        <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="/js/nivo-slider/jquery.nivo.slider.pack.js"></script>
 
         <script type="text/javascript">
 
+            // Google Analytics
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-25138124-1']);
             _gaq.push(['_setDomainName', '.caltatherapy.com']);
@@ -17,6 +23,8 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
+
+            
 
         </script>
     </head>
@@ -63,9 +71,9 @@
                     <br />
                     <div id="addressText" class="addressText">
                         <div id="addressHeaderText" class="addressHeaderText">
-                            The Historic Paxton Building
+                            <p>The Historic Paxton Building</p>
                         </div>
-                        1403 Farnam St <span class="diamond">&#x25C6;</span> Suite 215
+                        <p>1403 Farnam St <span class="diamond">&#x25C6;</span> Suite 215
                         <br />
                         Omaha, NE 68102
                         <br />
@@ -96,13 +104,27 @@
             <div id="content" class="content">
                 <img src="images/black_x.png" class="blackx" alt="Close" id="black_x" onClick="hide('office')"/>
                 <div id="picColumn" class="picColumn">
-                    <img src="images/profile_photo.png" />
+
+                    <!-- Slide show of office -->
+                    <div class="slider-wrapper theme-default">
+                        <div class="ribbon"></div>
+                        <div id="slider" class="nivoSlider">
+                            <img src="/images/office1.jpg" alt="" />
+                            <img src="/images/office2.jpg" alt="" />
+                            <img src="/images/office3.jpg" alt="" />
+                            <img src="/images/office4.jpg" alt="" title="#htmlcaption" />
+                        </div>
+                        <div id="htmlcaption" class="nivo-html-caption">
+                            Lobby of the historic <a href="http://www.thepaxton.com/downtown-omaha-condos/">Paxton building</a>.
+                        </div>
+                    </div>
+
                     <br />
                     <div id="addressText" class="addressText">
                         <div id="addressHeaderText" class="addressHeaderText">
-                            The Historic Paxton Building
+                            <p>The Historic Paxton Building</p>
                         </div>
-                        1403 Farnam St <span class="diamond">&#x25C6;</span> Suite 215
+                        <p>1403 Farnam St <span class="diamond">&#x25C6;</span> Suite 215
                         <br />
                         Omaha, NE 68102
                         <br />
@@ -115,19 +137,11 @@
                 <div id="textColumn" class="textColumn">
                     <p>Office is conveniently located in the Historic Paxton Building in downtown Omaha at the Southwest Corner of 14th and Farnam Streets.</p>
                     <p>Metered parking is available on either Farnam or 14th Streets.</p>
-                    <iframe width="425"
-                            height="350"
-                            frameborder="0"
-                            scrolling="no"
-                            marginheight="0"
-                            marginwidth="0"
-                            src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1403+Farnam+Street,+Omaha,+NE&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=43.528905,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=1403+Farnam+St,+Omaha,+Douglas,+Nebraska+68102&amp;ll=41.257273,-95.935002&amp;spn=0.005065,0.013937&amp;t=h&amp;z=14&amp;output=embed">
-                    </iframe>
-                    <br />
-                    <small>
-                        <a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1403+Farnam+Street,+Omaha,+NE&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=43.528905,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=1403+Farnam+St,+Omaha,+Douglas,+Nebraska+68102&amp;ll=41.257273,-95.935002&amp;spn=0.005065,0.013937&amp;t=h&amp;z=14" 
-                           style="color:#0000FF;text-align:left">View Larger Map</a>
-                    </small>
+
+                    <a href="http://maps.google.com/maps?q=1403+Farnam+St,omaha,+ne&hl=en&ll=41.25715,-95.935133&spn=0.002762,0.006968&sll=37.0625,-95.677068&sspn=47.349227,114.169922&vpsrc=6&hnear=1403+Farnam+St,+Omaha,+Nebraska+68102&t=m&z=18" 
+                       target="_blank" />
+                        <img src="/images/map.png" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -136,13 +150,12 @@
             <div id="content" class="content">
                 <img src="images/black_x.png" class="blackx" alt="Close" id="black_x" onClick="hide('payments')"/>
                 <div id="picColumn" class="picColumn">
-                    <img src="images/profile_photo.png" />
                     <br />
                     <div id="addressText" class="addressText">
                         <div id="addressHeaderText" class="addressHeaderText">
-                            The Historic Paxton Building
+                            <p>The Historic Paxton Building</p>
                         </div>
-                        1403 Farnam St <span class="diamond">&#x25C6;</span> Suite 215
+                        <p>1403 Farnam St <span class="diamond">&#x25C6;</span> Suite 215
                         <br />
                         Omaha, NE 68102
                         <br />
@@ -154,10 +167,22 @@
                 </div>
                 <div id="textColumn" class="textColumn">
                     <p>Most major insurances are accepted, as well as major credit cards.</p>
-                    <img src="images/visa_mastercard_logo.gif" alt="Visa/Mastercard" />
+                    <div align="center">
+                        <table>
+                            <tr>
+                                <td align="center" vAlign="center"> 
+                                    <img src="images/visa-logo.jpg" alt="Visa" />
+                                </td>
+                                <td align="center" vAlign="center"> 
+                                    <img src="images/mastercard-logo.jpg" alt="Mastercard" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
+
 
     </body>
 </html>
@@ -166,6 +191,10 @@
 
 $(document).ready(function() {
     hide('all');
+});
+
+$(window).load(function() {
+    $('#slider').nivoSlider();
 });
 
 function hide(category)
@@ -194,7 +223,7 @@ function hide(category)
     }
     else if(category == "office")
     {
-        $('#about').hide('fast');
+        $('#office').hide('fast');
         $('#tabOffice').addClass("tabs");
         $('#tabOffice').removeClass("tabSelected");
     }
