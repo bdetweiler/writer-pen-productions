@@ -1,0 +1,123 @@
+# Run my backup program to dump the MySQL database and stick it onto the AgWorks Server.
+# This will run every morning at 1:35 am.
+35      1       *       *       *       /usr/local/bin/backup_exec >> /var/log/backup_exec.log
+
+
+# /usr/local/bin/backup_exec
+
+#! /bin/sh
+
+# Print the date to the log file (via crontab)
+date
+
+mv /var/www/coop/Report/old_report.csv /var/
+# CLI PHP runs the report
+# Dump MySQL Database to a gzip file in /tmp/
+/usr/local/bin/mysqldump --databases -u root --password=k00ab1d coop | gzip > /tmp/coop.gz
+
+cd /tmp
+echo "waiting..."
+sleep 2
+
+# Start up smbclient and point it to the AgWorks Server's My Documents folder.
+# Remove the existing coop.gz, and put the new one there
+/usr/local/bin/smbclient //Agworksserver/"My Documents" -U administrator%AgWorks02765! -c "cd Timecard_backup; rm coop.gz; put coop.gz; exit"
+
+===============================================================================================
+
+# Set a flag on Sunday if the Monday reports are due monday
+50	23	*	*	0	/usr/local/bin/php /var/www/coop/flag.php
+
+
+# /var/www/coop/flag.php
+
+<?php
+	// Schedule to run every Sunday so it will
+	// set a flag every other Sunday and the script
+	// will know to run the reports
+/* *************************************************
+   * Need to know if paycycle is greater than one  *
+   * week from now(). If Paycycle is greater than  *
+   * one week from now (sunday), then we do nothing*
+   * If it is less than, then we set the flag      *
+   *************************************************/
+
+	@include('../conn.inc.php');
+	$pay_cycle_check = "SELECT cycle_date
+                         FROM pay_cycle
+				     WHERE cycle_date >= NOW()
+                         ORDER BY entry_id
+                         LIMIT 0, 1";	  
+	$pay_cycle_check_query = mysql_query($pay_cycle_check);
+	$pay_cycle_check_result = mysql_fetch_array($pay_cycle_check_query);
+
+	$next_pay_cycle = (strtotime($pay_cycle_check_result[0])); // - (strtotime("now"));
+
+	echo strtotime($pay_cycle_check_result[0]) . " pay cycle check result\n ";
+
+	$one_week_from_now = (strtotime("+1 week")); // - (strtotime("now"));
+
+	echo strtotime("+1 week") . " Plus one week\n ";
+
+	if($next_pay_cycle > $one_week_from_now)
+	{
+	 	echo 'Nothing to do.';
+	}
+	else
+	{
+		touch("/var/www/coop/Report/flag.on");
+	}
+
+?>
+
+
+# Run the reports every monday depending on whether or not a flag was set (handled by php script)
+15	1	*	*	1	/usr/local/bin/coop_report_generator.sh
+
+# The flag.php script will be run on each Sunday and 
+# create a flag.on file if the next day is a new pay cycle.
+# If that file is present on Monday when this script is run,
+# then the if condition will be true and the following will execute.
+if [ -f /var/www/coop/Report/flag.on ]; then
+
+	# The new report is now the old report.
+	cp /var/www/coop/Report/new_report.csv /var/www/coop/Report/old_report.csv
+
+	# Create a file with today's date
+	/usr/local/bin/php /var/www/coop/Report/touch.php;
+
+# /var/www/coop/Reports/touch.php
+<?php
+$date_name = date("dMY") . ".csv";
+touch("/var/www/coop/Report/$date_name");
+echo $date_name;
+chmod("/var/www/coop/Report/$date_name", 0777);
+?>
+
+	# PHP CLI executes report-cli.php
+	/usr/local/bin/php /var/www/coop/Report/report-cli.php;
+
+   # RUN REPORTS
+
+	# Wait a little while to be safe // try without this
+	# sleep 20 
+
+	# Copy the new report into it's specified date field that has already
+	# been created with touch.php
+	cp /var/www/coop/Report/new_report.csv /var/www/coop/Report/*20*.csv;
+
+	# Remove the leftover CSV file in the Report directory
+	mv /var/www/coop/Report/*20*.csv /var/www/coop/Report/Archive/;
+
+	# Remove the flag
+	rm /var/www/coop/Report/flag.on;
+
+fi
+
+# /var/www/coop/archive.php
+
+/* Searches /var/www/coop/Reports/Archive/ for anything with a '0' in it (i.e.
+ * every file that has a date in it) and displays them (up to 2 years) in a
+ * table. 
+ */
+

@@ -1,0 +1,1156 @@
+
+Starting nmap 3.50 ( http://www.insecure.org/nmap ) at 2005-01-03 07:40 Pacific Standard Time
+Host 192.168.0.1 appears to be down, skipping it.
+Host 192.168.0.2 appears to be down, skipping it.
+Host 192.168.0.3 appears to be down, skipping it.
+Host 192.168.0.4 appears to be down, skipping it.
+Host 192.168.0.5 appears to be down, skipping it.
+Host 192.168.0.6 appears to be down, skipping it.
+Host 192.168.0.7 appears to be down, skipping it.
+Host 192.168.0.8 appears to be down, skipping it.
+Host 192.168.0.9 appears to be down, skipping it.
+Host AC-SERVER (192.168.0.10) appears to be up ... good.
+Initiating SYN Stealth Scan against AC-SERVER (192.168.0.10) at 07:40
+Adding open port 3268/tcp
+Adding open port 53/tcp
+Adding open port 445/tcp
+Adding open port 3389/tcp
+Adding open port 593/tcp
+Adding open port 3269/tcp
+Adding open port 1025/tcp
+Adding open port 389/tcp
+Adding open port 464/tcp
+Adding open port 5900/tcp
+Adding open port 139/tcp
+Adding open port 88/tcp
+Adding open port 1080/tcp
+Adding open port 135/tcp
+Adding open port 636/tcp
+Adding open port 1026/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 53 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 53 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 53 is open and port 1 is closed and neither are firewalled
+Interesting ports on AC-SERVER (192.168.0.10):
+(The 1643 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+53/tcp   open  domain
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+1025/tcp open  NFS-or-IIS
+1026/tcp open  LSA-or-nterm
+1080/tcp open  socks
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+3389/tcp open  ms-term-serv
+5900/tcp open  vnc
+No exact OS matches for host (If you know what OS is running on it, see http://www.insecure.org/cgi-bin/nmap-submit.cgi).
+TCP/IP fingerprint:
+SInfo(V=3.50%P=i686-pc-windows-windows%D=1/3%Time=41D96762%O=53%C=1)
+TSeq(Class=TR%IPID=I%TS=U)
+T1(Resp=Y%DF=Y%W=FFFF%ACK=S++%Flags=AS%Ops=MNW)
+T2(Resp=Y%DF=N%W=0%ACK=S%Flags=AR%Ops=)
+T3(Resp=Y%DF=Y%W=FFFF%ACK=S++%Flags=AS%Ops=MNW)
+T4(Resp=Y%DF=N%W=0%ACK=O%Flags=R%Ops=)
+T5(Resp=Y%DF=N%W=0%ACK=S++%Flags=AR%Ops=)
+T6(Resp=Y%DF=N%W=0%ACK=O%Flags=R%Ops=)
+T7(Resp=Y%DF=N%W=0%ACK=S++%Flags=AR%Ops=)
+PU(Resp=Y%DF=N%TOS=0%IPLEN=B0%RIPTL=148%RIPCK=E%UCK=E%ULEN=134%DAT=E)
+
+
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.11 appears to be down, skipping it.
+Host 192.168.0.12 appears to be down, skipping it.
+Host 192.168.0.13 appears to be down, skipping it.
+Host 192.168.0.14 appears to be down, skipping it.
+Host 192.168.0.15 appears to be down, skipping it.
+Host 192.168.0.16 appears to be down, skipping it.
+Host 192.168.0.17 appears to be down, skipping it.
+Host 192.168.0.18 appears to be down, skipping it.
+Host 192.168.0.19 appears to be down, skipping it.
+Host 192.168.0.20 appears to be down, skipping it.
+Host DATAREPO (192.168.0.21) appears to be up ... good.
+Initiating SYN Stealth Scan against DATAREPO (192.168.0.21) at 07:40
+Adding open port 445/tcp
+Adding open port 2032/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on DATAREPO (192.168.0.21):
+(The 1655 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2032/tcp open  blackboard
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=4637 (Formidable)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.22 appears to be down, skipping it.
+Host 192.168.0.23 appears to be down, skipping it.
+Host 192.168.0.24 appears to be down, skipping it.
+Host LISA_XP (192.168.0.25) appears to be up ... good.
+Initiating SYN Stealth Scan against LISA_XP (192.168.0.25) at 07:40
+Adding open port 38292/tcp
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Interesting ports on LISA_XP (192.168.0.25):
+(The 1652 ports scanned but not shown below are in state: closed)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1025/tcp  open  NFS-or-IIS
+5000/tcp  open  UPnP
+38292/tcp open  landesk-cba
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=5153 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host VAL (192.168.0.26) appears to be up ... good.
+Initiating SYN Stealth Scan against VAL (192.168.0.26) at 07:40
+Adding open port 5631/tcp
+Adding open port 445/tcp
+Adding open port 5800/tcp
+Adding open port 1025/tcp
+Adding open port 5900/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on VAL (192.168.0.26):
+(The 1652 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+5631/tcp open  pcanywheredata
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=3792 (Formidable)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.27 appears to be down, skipping it.
+Host 192.168.0.28 appears to be down, skipping it.
+Host 192.168.0.29 appears to be down, skipping it.
+Host 192.168.0.30 appears to be down, skipping it.
+Host 192.168.0.31 appears to be down, skipping it.
+Host 192.168.0.32 appears to be down, skipping it.
+Host 192.168.0.33 appears to be down, skipping it.
+Host TODD-COOP (192.168.0.34) appears to be up ... good.
+Initiating SYN Stealth Scan against TODD-COOP (192.168.0.34) at 07:40
+Adding open port 445/tcp
+Adding open port 139/tcp
+The SYN Stealth Scan took 119 seconds to scan 1659 ports.
+Warning:  OS detection will be MUCH less reliable because we did not find at least 1 open and 1 closed TCP port
+For OSScan assuming that port 139 is open and port 42321 is closed and neither are firewalled
+For OSScan assuming that port 139 is open and port 43252 is closed and neither are firewalled
+For OSScan assuming that port 139 is open and port 32755 is closed and neither are firewalled
+Interesting ports on TODD-COOP (192.168.0.34):
+(The 1657 ports scanned but not shown below are in state: filtered)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running (JUST GUESSING) : Linux 2.4.X (93%), Microsoft Windows 2003/.NET|NT/2K/XP (93%), IBM AIX 4.X (92%), Apple Mac OS X 10.3.X (86%), Compaq Tru64 UNIX 4.X (86%), FreeBSD 5.X (86%)
+Aggressive OS guesses: Astaro Security Linux 4 (Kernel 2.4.19) (93%), Microsoft Windows Server 2003 (93%), IBM AIX 4.3.2.0-4.3.3.0 on an IBM RS/* (92%), Microsoft Windows XP SP1 or Windows 2000 SP3 (87%), Apple Mac OX X 10.3.0 - 10.3.2 (Panther) (86%), Compaq Tru64 UNIX 4.0e (86%), FreeBSD 5.0-RELEASE (86%), Microsoft Windows 2000 SP3 (86%), Microsoft Windows XP SP1 (86%), Microsoft Windows 2000 SP4 or Windows XP SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Incremental
+
+Host CHRISTIE (192.168.0.35) appears to be up ... good.
+Initiating SYN Stealth Scan against CHRISTIE (192.168.0.35) at 07:42
+Adding open port 9/tcp
+Adding open port 445/tcp
+Adding open port 19/tcp
+Adding open port 13/tcp
+Adding open port 139/tcp
+Adding open port 7/tcp
+Adding open port 135/tcp
+Adding open port 17/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 7 is open and port 1 is closed and neither are firewalled
+Interesting ports on CHRISTIE (192.168.0.35):
+(The 1651 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+7/tcp   open  echo
+9/tcp   open  discard
+13/tcp  open  daytime
+17/tcp  open  qotd
+19/tcp  open  chargen
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=12019 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host YOUR-E7NDL1JV3J (192.168.0.36) appears to be up ... good.
+Initiating SYN Stealth Scan against YOUR-E7NDL1JV3J (192.168.0.36) at 07:42
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 5101/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on YOUR-E7NDL1JV3J (192.168.0.36):
+(The 1654 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+5000/tcp open  UPnP
+5101/tcp open  admdog
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=10207 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host DEB (192.168.0.37) appears to be up ... good.
+Initiating SYN Stealth Scan against DEB (192.168.0.37) at 07:42
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on DEB (192.168.0.37):
+(The 1654 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+5000/tcp open  UPnP
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP, Microsoft Windows XP SP1
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=10856 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.38 appears to be down, skipping it.
+Host HISXPHOME (192.168.0.39) appears to be up ... good.
+Initiating SYN Stealth Scan against HISXPHOME (192.168.0.39) at 07:42
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on HISXPHOME (192.168.0.39):
+(The 1654 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+5000/tcp open  UPnP
+Device type: general purpose
+Running: Microsoft Windows NT/2K/XP
+OS details: Microsoft Windows XP Professional SP1
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=8558 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.40 appears to be down, skipping it.
+Host coop (192.168.0.41) appears to be up ... good.
+Initiating SYN Stealth Scan against coop (192.168.0.41) at 07:42
+Adding open port 113/tcp
+Adding open port 3306/tcp
+Adding open port 22/tcp
+Adding open port 80/tcp
+Adding open port 37/tcp
+Adding open port 13/tcp
+Adding open port 139/tcp
+The SYN Stealth Scan took 23 seconds to scan 1659 ports.
+For OSScan assuming that port 13 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 13 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 13 is open and port 1 is closed and neither are firewalled
+Interesting ports on coop (192.168.0.41):
+(The 1652 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+13/tcp   open  daytime
+22/tcp   open  ssh
+37/tcp   open  time
+80/tcp   open  http
+113/tcp  open  auth
+139/tcp  open  netbios-ssn
+3306/tcp open  mysql
+No exact OS matches for host (If you know what OS is running on it, see http://www.insecure.org/cgi-bin/nmap-submit.cgi).
+TCP/IP fingerprint:
+SInfo(V=3.50%P=i686-pc-windows-windows%D=1/3%Time=41D9681C%O=13%C=1)
+TSeq(Class=TR%IPID=RD%TS=2HZ)
+T1(Resp=Y%DF=Y%W=4000%ACK=S++%Flags=AS%Ops=MNWNNT)
+T2(Resp=Y%DF=Y%W=0%ACK=S%Flags=AR%Ops=)
+T3(Resp=Y%DF=Y%W=4000%ACK=S++%Flags=AS%Ops=MNWNNT)
+T4(Resp=Y%DF=Y%W=0%ACK=O%Flags=R%Ops=)
+T5(Resp=Y%DF=Y%W=0%ACK=S++%Flags=AR%Ops=)
+T6(Resp=Y%DF=Y%W=0%ACK=O%Flags=R%Ops=)
+T7(Resp=Y%DF=Y%W=0%ACK=S%Flags=AR%Ops=)
+PU(Resp=Y%DF=N%TOS=0%IPLEN=38%RIPTL=148%RIPCK=E%UCK=E%ULEN=134%DAT=E)
+
+
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Randomized
+
+Host 192.168.0.42 appears to be down, skipping it.
+Host 192.168.0.43 appears to be down, skipping it.
+Host 192.168.0.44 appears to be down, skipping it.
+Host 192.168.0.45 appears to be down, skipping it.
+Host 192.168.0.46 appears to be down, skipping it.
+Host 192.168.0.47 appears to be down, skipping it.
+Host 192.168.0.48 appears to be down, skipping it.
+Host 192.168.0.49 appears to be down, skipping it.
+Host RONB (192.168.0.50) appears to be up ... good.
+Initiating SYN Stealth Scan against RONB (192.168.0.50) at 07:43
+Adding open port 445/tcp
+Adding open port 139/tcp
+The SYN Stealth Scan took 118 seconds to scan 1659 ports.
+Warning:  OS detection will be MUCH less reliable because we did not find at least 1 open and 1 closed TCP port
+For OSScan assuming that port 139 is open and port 32307 is closed and neither are firewalled
+Interesting ports on RONB (192.168.0.50):
+(The 1657 ports scanned but not shown below are in state: filtered)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: IBM AIX 4.X, Microsoft Windows 2003/.NET
+OS details: IBM AIX 4.3.2.0-4.3.3.0 on an IBM RS/*, Microsoft Windows Server 2003
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.51 appears to be down, skipping it.
+Host 192.168.0.52 appears to be down, skipping it.
+Host LOCALHOST (192.168.0.53) appears to be up ... good.
+Initiating SYN Stealth Scan against LOCALHOST (192.168.0.53) at 07:45
+Adding open port 3306/tcp
+Adding open port 22/tcp
+Adding open port 111/tcp
+Adding open port 10000/tcp
+Adding open port 139/tcp
+Adding open port 631/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 22 is open and port 1 is closed and neither are firewalled
+Interesting ports on LOCALHOST (192.168.0.53):
+(The 1653 ports scanned but not shown below are in state: closed)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+631/tcp   open  ipp
+3306/tcp  open  mysql
+10000/tcp open  snet-sensor-mgmt
+Device type: general purpose
+Running: Linux 2.4.X|2.5.X
+OS details: Linux Kernel 2.4.0 - 2.5.20
+Uptime 207.833 days (since Wed Jun 09 12:46:40 2004)
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=4819671 (Good luck!)
+IPID Sequence Generation: All zeros
+
+Host 192.168.0.54 appears to be down, skipping it.
+Host 192.168.0.55 appears to be down, skipping it.
+Host TIFFANY (192.168.0.56) appears to be up ... good.
+Initiating SYN Stealth Scan against TIFFANY (192.168.0.56) at 07:45
+Adding open port 139/tcp
+The SYN Stealth Scan took 1 second to scan 1659 ports.
+For OSScan assuming that port 139 is open and port 1 is closed and neither are firewalled
+Interesting ports on TIFFANY (192.168.0.56):
+(The 1658 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Device type: media device|general purpose
+Running: Turtle Beach embedded, Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Turtle Beach AudioTron 100 network MP3 player, Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=3 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host 192.168.0.57 appears to be down, skipping it.
+Host SARA-XP (192.168.0.58) appears to be up ... good.
+Initiating SYN Stealth Scan against SARA-XP (192.168.0.58) at 07:45
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on SARA-XP (192.168.0.58):
+(The 1654 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+5000/tcp open  UPnP
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=7205 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.59 appears to be down, skipping it.
+Host SUZANN (192.168.0.60) appears to be up ... good.
+Initiating SYN Stealth Scan against SUZANN (192.168.0.60) at 07:45
+Adding open port 139/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 139 is open and port 1 is closed and neither are firewalled
+Interesting ports on SUZANN (192.168.0.60):
+(The 1658 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Device type: media device|general purpose
+Running: Turtle Beach embedded, Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Turtle Beach AudioTron 100 network MP3 player, Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=3 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host 192.168.0.61 appears to be down, skipping it.
+Host 192.168.0.62 appears to be down, skipping it.
+Host VERDA (192.168.0.63) appears to be up ... good.
+Initiating SYN Stealth Scan against VERDA (192.168.0.63) at 07:45
+Adding open port 139/tcp
+The SYN Stealth Scan took 3 seconds to scan 1659 ports.
+For OSScan assuming that port 139 is open and port 1 is closed and neither are firewalled
+Interesting ports on VERDA (192.168.0.63):
+(The 1658 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=7673 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.64 appears to be down, skipping it.
+Host JULIEN (192.168.0.65) appears to be up ... good.
+Initiating SYN Stealth Scan against JULIEN (192.168.0.65) at 07:45
+Adding open port 139/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 139 is open and port 1 is closed and neither are firewalled
+Interesting ports on JULIEN (192.168.0.65):
+(The 1658 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Device type: media device|general purpose
+Running: Turtle Beach embedded, Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Turtle Beach AudioTron 100 network MP3 player, Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=1 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host 192.168.0.66 appears to be down, skipping it.
+Host GEORGE (192.168.0.67) appears to be up ... good.
+Initiating SYN Stealth Scan against GEORGE (192.168.0.67) at 07:45
+Adding open port 445/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on GEORGE (192.168.0.67):
+(The 1656 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=13731 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.68 appears to be down, skipping it.
+Host DON (192.168.0.69) appears to be up ... good.
+Initiating SYN Stealth Scan against DON (192.168.0.69) at 07:45
+Adding open port 139/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 1 second to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Interesting ports on DON (192.168.0.69):
+(The 1657 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+139/tcp open  netbios-ssn
+Device type: media device|general purpose
+Running: Turtle Beach embedded, Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Turtle Beach AudioTron 100 network MP3 player, Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=1 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host 192.168.0.70 appears to be down, skipping it.
+Host 192.168.0.71 appears to be down, skipping it.
+Host SUSAN (192.168.0.72) appears to be up ... good.
+Initiating SYN Stealth Scan against SUSAN (192.168.0.72) at 07:45
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on SUSAN (192.168.0.72):
+(The 1654 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+5000/tcp open  UPnP
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=5400 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.73 appears to be down, skipping it.
+Host 192.168.0.74 appears to be down, skipping it.
+Host 192.168.0.75 appears to be down, skipping it.
+Host 192.168.0.76 appears to be down, skipping it.
+Host 192.168.0.77 appears to be down, skipping it.
+Host 192.168.0.78 appears to be down, skipping it.
+Host 192.168.0.79 appears to be down, skipping it.
+Host 192.168.0.80 appears to be down, skipping it.
+Host 192.168.0.81 appears to be down, skipping it.
+Host 192.168.0.82 appears to be down, skipping it.
+Host 192.168.0.83 appears to be down, skipping it.
+Host 192.168.0.84 appears to be down, skipping it.
+Host FEED1 (192.168.0.85) appears to be up ... good.
+Initiating SYN Stealth Scan against FEED1 (192.168.0.85) at 07:46
+Adding open port 139/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 139 is open and port 1 is closed and neither are firewalled
+Interesting ports on FEED1 (192.168.0.85):
+(The 1658 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE, Microsoft Windows NT 4.0 SP3
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=1 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host 192.168.0.86 appears to be down, skipping it.
+Host 192.168.0.87 appears to be down, skipping it.
+Host 192.168.0.88 appears to be down, skipping it.
+Host 192.168.0.89 appears to be down, skipping it.
+Host 192.168.0.90 appears to be down, skipping it.
+Host 192.168.0.91 appears to be down, skipping it.
+Host 192.168.0.92 appears to be down, skipping it.
+Host 192.168.0.93 appears to be down, skipping it.
+Host 192.168.0.94 appears to be down, skipping it.
+Host 192.168.0.95 appears to be down, skipping it.
+Host 192.168.0.96 appears to be down, skipping it.
+Host 192.168.0.97 appears to be down, skipping it.
+Host 192.168.0.98 appears to be down, skipping it.
+Host 192.168.0.99 appears to be down, skipping it.
+Host 192.168.0.100 appears to be down, skipping it.
+Host CHRISV (192.168.0.101) appears to be up ... good.
+Initiating SYN Stealth Scan against CHRISV (192.168.0.101) at 07:46
+Adding open port 445/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on CHRISV (192.168.0.101):
+(The 1656 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=7606 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.102 appears to be down, skipping it.
+Host 192.168.0.103 appears to be down, skipping it.
+Host 192.168.0.104 appears to be down, skipping it.
+Host 192.168.0.105 appears to be down, skipping it.
+Host 192.168.0.106 appears to be down, skipping it.
+Host 192.168.0.107 appears to be down, skipping it.
+Host 192.168.0.108 appears to be down, skipping it.
+Host 192.168.0.109 appears to be down, skipping it.
+Host COLLEEN_XP (192.168.0.110) appears to be up ... good.
+Initiating SYN Stealth Scan against COLLEEN_XP (192.168.0.110) at 07:46
+Adding open port 445/tcp
+Adding open port 139/tcp
+The SYN Stealth Scan took 120 seconds to scan 1659 ports.
+Warning:  OS detection will be MUCH less reliable because we did not find at least 1 open and 1 closed TCP port
+For OSScan assuming that port 139 is open and port 34174 is closed and neither are firewalled
+Interesting ports on COLLEEN_XP (192.168.0.110):
+(The 1657 ports scanned but not shown below are in state: filtered)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: IBM AIX 4.X, Microsoft Windows 2003/.NET
+OS details: IBM AIX 4.3.2.0-4.3.3.0 on an IBM RS/*, Microsoft Windows Server 2003
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.111 appears to be down, skipping it.
+Host 192.168.0.112 appears to be down, skipping it.
+Host 192.168.0.113 appears to be down, skipping it.
+Host 192.168.0.114 appears to be down, skipping it.
+Host 192.168.0.115 appears to be down, skipping it.
+Host 192.168.0.116 appears to be down, skipping it.
+Host 192.168.0.117 appears to be down, skipping it.
+Host 192.168.0.118 appears to be down, skipping it.
+Host 192.168.0.119 appears to be down, skipping it.
+Host 192.168.0.120 appears to be down, skipping it.
+Host JULIEH (192.168.0.121) appears to be up ... good.
+Initiating SYN Stealth Scan against JULIEH (192.168.0.121) at 07:48
+Adding open port 80/tcp
+Adding open port 139/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 80 is open and port 1 is closed and neither are firewalled
+Interesting ports on JULIEH (192.168.0.121):
+(The 1657 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+80/tcp  open  http
+139/tcp open  netbios-ssn
+Device type: media device|general purpose
+Running: Turtle Beach embedded, Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Turtle Beach AudioTron 100 network MP3 player, Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=4 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host KAREN_ACC (192.168.0.122) appears to be up ... good.
+Initiating SYN Stealth Scan against KAREN_ACC (192.168.0.122) at 07:48
+Adding open port 445/tcp
+Adding open port 139/tcp
+The SYN Stealth Scan took 119 seconds to scan 1659 ports.
+Warning:  OS detection will be MUCH less reliable because we did not find at least 1 open and 1 closed TCP port
+For OSScan assuming that port 139 is open and port 40033 is closed and neither are firewalled
+For OSScan assuming that port 139 is open and port 38435 is closed and neither are firewalled
+For OSScan assuming that port 139 is open and port 32160 is closed and neither are firewalled
+Interesting ports on KAREN_ACC (192.168.0.122):
+(The 1657 ports scanned but not shown below are in state: filtered)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running (JUST GUESSING) : Linux 2.4.X (93%), Microsoft Windows 2003/.NET|NT/2K/XP (93%), IBM AIX 4.X (92%), Apple Mac OS X 10.3.X (86%), Compaq Tru64 UNIX 4.X (86%), FreeBSD 5.X (86%)
+Aggressive OS guesses: Astaro Security Linux 4 (Kernel 2.4.19) (93%), Microsoft Windows Server 2003 (93%), IBM AIX 4.3.2.0-4.3.3.0 on an IBM RS/* (92%), Microsoft Windows XP SP1 or Windows 2000 SP3 (87%), Apple Mac OX X 10.3.0 - 10.3.2 (Panther) (86%), Compaq Tru64 UNIX 4.0e (86%), FreeBSD 5.0-RELEASE (86%), Microsoft Windows 2000 SP3 (86%), Microsoft Windows XP SP1 (86%), Microsoft Windows 2000 SP4 or Windows XP SP1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.123 appears to be down, skipping it.
+Host 192.168.0.124 appears to be down, skipping it.
+Host 192.168.0.125 appears to be down, skipping it.
+Host 192.168.0.126 appears to be down, skipping it.
+Host 192.168.0.127 appears to be down, skipping it.
+Host FEED3 (192.168.0.128) appears to be up ... good.
+Initiating SYN Stealth Scan against FEED3 (192.168.0.128) at 07:50
+Adding open port 38292/tcp
+Adding open port 139/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Interesting ports on FEED3 (192.168.0.128):
+(The 1656 ports scanned but not shown below are in state: closed)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+139/tcp   open  netbios-ssn
+38292/tcp open  landesk-cba
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows NT 3.51 SP5, NT 4.0 or 95/98/98SE, Microsoft Windows NT 4.0 SP3
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=3 (Trivial joke)
+IPID Sequence Generation: Broken little-endian incremental
+
+Host 192.168.0.129 appears to be down, skipping it.
+Host 192.168.0.130 appears to be down, skipping it.
+Host 192.168.0.131 appears to be down, skipping it.
+Host 192.168.0.132 appears to be down, skipping it.
+Host 192.168.0.133 appears to be down, skipping it.
+Host 192.168.0.134 appears to be down, skipping it.
+Host 192.168.0.135 appears to be down, skipping it.
+Host 192.168.0.136 appears to be down, skipping it.
+Host 192.168.0.137 appears to be down, skipping it.
+Host 192.168.0.138 appears to be down, skipping it.
+Host 192.168.0.139 appears to be down, skipping it.
+Host 192.168.0.140 appears to be down, skipping it.
+Host 192.168.0.141 appears to be down, skipping it.
+Host 192.168.0.142 appears to be down, skipping it.
+Host 192.168.0.143 appears to be down, skipping it.
+Host 192.168.0.144 appears to be down, skipping it.
+Host 192.168.0.145 appears to be down, skipping it.
+Host 192.168.0.146 appears to be down, skipping it.
+Host 192.168.0.147 appears to be down, skipping it.
+Host 192.168.0.148 appears to be down, skipping it.
+Host 192.168.0.149 appears to be down, skipping it.
+Host 192.168.0.150 appears to be down, skipping it.
+Host 192.168.0.151 appears to be down, skipping it.
+Host 192.168.0.152 appears to be down, skipping it.
+Host 192.168.0.153 appears to be down, skipping it.
+Host 192.168.0.154 appears to be down, skipping it.
+Host 192.168.0.155 appears to be down, skipping it.
+Host 192.168.0.156 appears to be down, skipping it.
+Host 192.168.0.157 appears to be down, skipping it.
+Host 192.168.0.158 appears to be down, skipping it.
+Host 192.168.0.159 appears to be down, skipping it.
+Host 192.168.0.160 appears to be down, skipping it.
+Host 192.168.0.161 appears to be down, skipping it.
+Host 192.168.0.162 appears to be down, skipping it.
+Host 192.168.0.163 appears to be down, skipping it.
+Host 192.168.0.164 appears to be down, skipping it.
+Host 192.168.0.165 appears to be down, skipping it.
+Host 192.168.0.166 appears to be down, skipping it.
+Host 192.168.0.167 appears to be down, skipping it.
+Host 192.168.0.168 appears to be down, skipping it.
+Host 192.168.0.169 appears to be down, skipping it.
+Host 192.168.0.170 appears to be down, skipping it.
+Host 192.168.0.171 appears to be down, skipping it.
+Host 192.168.0.172 appears to be down, skipping it.
+Host 192.168.0.173 appears to be down, skipping it.
+Host 192.168.0.174 appears to be down, skipping it.
+Host 192.168.0.175 appears to be down, skipping it.
+Host 192.168.0.176 appears to be down, skipping it.
+Host 192.168.0.177 appears to be down, skipping it.
+Host 192.168.0.178 appears to be down, skipping it.
+Host 192.168.0.179 appears to be down, skipping it.
+Host 192.168.0.180 appears to be down, skipping it.
+Host 192.168.0.181 appears to be down, skipping it.
+Host 192.168.0.182 appears to be down, skipping it.
+Host 192.168.0.183 appears to be down, skipping it.
+Host 192.168.0.184 appears to be down, skipping it.
+Host 192.168.0.185 appears to be down, skipping it.
+Host 192.168.0.186 appears to be down, skipping it.
+Host 192.168.0.187 appears to be down, skipping it.
+Host 192.168.0.188 appears to be down, skipping it.
+Host 192.168.0.189 appears to be down, skipping it.
+Host 192.168.0.190 appears to be down, skipping it.
+Host 192.168.0.191 appears to be down, skipping it.
+Host 192.168.0.192 appears to be down, skipping it.
+Host 192.168.0.193 appears to be down, skipping it.
+Host 192.168.0.194 appears to be down, skipping it.
+Host 192.168.0.195 appears to be down, skipping it.
+Host 192.168.0.196 appears to be down, skipping it.
+Host 192.168.0.197 appears to be down, skipping it.
+Host 192.168.0.198 appears to be down, skipping it.
+Host AURORA (192.168.0.199) appears to be up ... good.
+Initiating SYN Stealth Scan against AURORA (192.168.0.199) at 07:50
+Adding open port 445/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 1 second to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on AURORA (192.168.0.199):
+(The 1656 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=9556 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.200 appears to be up ... good.
+Initiating SYN Stealth Scan against 192.168.0.200 at 07:50
+Adding open port 1723/tcp
+Adding open port 23/tcp
+Adding open port 80/tcp
+The SYN Stealth Scan took 3 seconds to scan 1659 ports.
+For OSScan assuming that port 23 is open and port 1 is closed and neither are firewalled
+Interesting ports on 192.168.0.200:
+(The 1656 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+23/tcp   open  telnet
+80/tcp   open  http
+1723/tcp open  pptp
+Device type: general purpose
+Running: Linux 2.4.X|2.5.X
+OS details: Linux Kernel 2.4.0 - 2.5.20
+Uptime 25.773 days (since Wed Dec 08 13:18:15 2004)
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=3277772 (Good luck!)
+IPID Sequence Generation: All zeros
+
+Host 192.168.0.201 appears to be down, skipping it.
+Host 192.168.0.202 appears to be down, skipping it.
+Host 192.168.0.203 appears to be up ... good.
+Initiating SYN Stealth Scan against 192.168.0.203 at 07:50
+Adding open port 23/tcp
+Adding open port 80/tcp
+Adding open port 129/tcp
+Adding open port 9100/tcp
+Adding open port 139/tcp
+Adding open port 631/tcp
+Adding open port 515/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Interesting ports on 192.168.0.203:
+(The 1651 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+23/tcp   open  telnet
+80/tcp   open  http
+129/tcp  open  pwdgen
+139/tcp  open  netbios-ssn
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+Device type: printer
+Running: Okidata embedded
+OS details: Okidata Oki C5100 Printer
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=0 (Trivial joke)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.204 appears to be up ... good.
+Initiating SYN Stealth Scan against 192.168.0.204 at 07:50
+Adding open port 427/tcp
+Adding open port 80/tcp
+Adding open port 9100/tcp
+Adding open port 631/tcp
+Adding open port 515/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Interesting ports on 192.168.0.204:
+(The 1653 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+427/tcp  open  svrloc
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+No exact OS matches for host (If you know what OS is running on it, see http://www.insecure.org/cgi-bin/nmap-submit.cgi).
+TCP/IP fingerprint:
+SInfo(V=3.50%P=i686-pc-windows-windows%D=1/3%Time=41D969E9%O=21%C=1)
+TSeq(Class=TD%gcd=6B6C%SI=0%IPID=I%TS=U)
+TSeq(Class=TD%gcd=9C4%SI=1%IPID=I%TS=U)
+TSeq(Class=TD%gcd=6B6C%SI=0%IPID=I%TS=U)
+T1(Resp=Y%DF=N%W=2000%ACK=S++%Flags=AS%Ops=M)
+T2(Resp=Y%DF=N%W=0%ACK=S%Flags=AR%Ops=)
+T3(Resp=Y%DF=N%W=2000%ACK=S++%Flags=AS%Ops=M)
+T4(Resp=Y%DF=N%W=0%ACK=O%Flags=R%Ops=)
+T5(Resp=Y%DF=N%W=0%ACK=S++%Flags=AR%Ops=)
+T6(Resp=Y%DF=N%W=0%ACK=O%Flags=R%Ops=)
+T7(Resp=Y%DF=N%W=0%ACK=S++%Flags=AR%Ops=)
+PU(Resp=Y%DF=N%TOS=0%IPLEN=38%RIPTL=148%RIPCK=E%UCK=E%ULEN=134%DAT=E)
+
+
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=0 (Trivial joke)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.205 appears to be down, skipping it.
+Host 192.168.0.206 appears to be down, skipping it.
+Host 192.168.0.207 appears to be down, skipping it.
+Host 192.168.0.208 appears to be down, skipping it.
+Host 192.168.0.209 appears to be down, skipping it.
+Host 192.168.0.210 appears to be down, skipping it.
+Host 192.168.0.211 appears to be down, skipping it.
+Host 192.168.0.212 appears to be down, skipping it.
+Host 192.168.0.213 appears to be down, skipping it.
+Host 192.168.0.214 appears to be down, skipping it.
+Host 192.168.0.215 appears to be down, skipping it.
+Host 192.168.0.216 appears to be down, skipping it.
+Host 192.168.0.217 appears to be down, skipping it.
+Host 192.168.0.218 appears to be down, skipping it.
+Host 192.168.0.219 appears to be down, skipping it.
+Host 192.168.0.220 appears to be down, skipping it.
+Host 192.168.0.221 appears to be down, skipping it.
+Host 192.168.0.222 appears to be down, skipping it.
+Host 192.168.0.223 appears to be down, skipping it.
+Host 192.168.0.224 appears to be down, skipping it.
+Host 192.168.0.225 appears to be down, skipping it.
+Host 192.168.0.226 appears to be down, skipping it.
+Host 192.168.0.227 appears to be down, skipping it.
+Host 192.168.0.228 appears to be down, skipping it.
+Host 192.168.0.229 appears to be down, skipping it.
+Host 192.168.0.230 appears to be down, skipping it.
+Host 192.168.0.231 appears to be down, skipping it.
+Host 192.168.0.232 appears to be down, skipping it.
+Host 192.168.0.233 appears to be down, skipping it.
+Host 192.168.0.234 appears to be down, skipping it.
+Host 192.168.0.235 appears to be down, skipping it.
+Host 192.168.0.236 appears to be down, skipping it.
+Host 192.168.0.237 appears to be down, skipping it.
+Host 192.168.0.238 appears to be down, skipping it.
+Host 192.168.0.239 appears to be down, skipping it.
+Host AC_WHATS_UP_SER (192.168.0.240) appears to be up ... good.
+Initiating SYN Stealth Scan against AC_WHATS_UP_SER (192.168.0.240) at 07:51
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 80/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+The SYN Stealth Scan took 1 second to scan 1659 ports.
+For OSScan assuming that port 80 is open and port 1 is closed and neither are firewalled
+Interesting ports on AC_WHATS_UP_SER (192.168.0.240):
+(The 1653 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+5000/tcp open  UPnP
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP, Microsoft Windows XP SP1
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=11065 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.241 appears to be down, skipping it.
+Host STATION (192.168.0.242) appears to be up ... good.
+Initiating SYN Stealth Scan against STATION (192.168.0.242) at 07:51
+Adding open port 139/tcp
+The SYN Stealth Scan took 192 seconds to scan 1659 ports.
+For OSScan assuming that port 139 is open and port 1 is closed and neither are firewalled
+Interesting ports on STATION (192.168.0.242):
+(The 1658 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=16886 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host YOUR-NARMQEOJL0 (192.168.0.243) appears to be up ... good.
+Initiating SYN Stealth Scan against YOUR-NARMQEOJL0 (192.168.0.243) at 07:54
+Adding open port 445/tcp
+Adding open port 5000/tcp
+Adding open port 1723/tcp
+Adding open port 1025/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+Adding open port 1026/tcp
+The SYN Stealth Scan took 47 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on YOUR-NARMQEOJL0 (192.168.0.243):
+(The 1652 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+1026/tcp open  LSA-or-nterm
+1723/tcp open  pptp
+5000/tcp open  UPnP
+No exact OS matches for host (If you know what OS is running on it, see http://www.insecure.org/cgi-bin/nmap-submit.cgi).
+TCP/IP fingerprint:
+SInfo(V=3.50%P=i686-pc-windows-windows%D=1/3%Time=41D96AFA%O=135%C=1)
+TSeq(Class=RI%gcd=1%SI=1BF3%IPID=I%TS=0)
+TSeq(Class=RI%gcd=1%SI=3AAA%IPID=I%TS=0)
+TSeq(Class=RI%gcd=1%SI=3ABE%IPID=I%TS=0)
+T1(Resp=Y%DF=Y%W=FF00%ACK=S++%Flags=AS%Ops=MNWNNT)
+T2(Resp=N)
+T3(Resp=Y%DF=Y%W=FF00%ACK=S++%Flags=AS%Ops=MNWNNT)
+T4(Resp=Y%DF=N%W=0%ACK=O%Flags=R%Ops=)
+T5(Resp=Y%DF=N%W=0%ACK=S++%Flags=AR%Ops=)
+T6(Resp=Y%DF=N%W=0%ACK=O%Flags=R%Ops=)
+T7(Resp=Y%DF=N%W=0%ACK=S++%Flags=AR%Ops=)
+PU(Resp=Y%DF=N%TOS=0%IPLEN=38%RIPTL=148%RIPCK=E%UCK=E%ULEN=134%DAT=E)
+
+
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=15038 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.244 appears to be down, skipping it.
+Host 192.168.0.245 appears to be down, skipping it.
+Host 192.168.0.246 appears to be down, skipping it.
+Host 192.168.0.247 appears to be down, skipping it.
+Host 192.168.0.248 appears to be down, skipping it.
+Host 192.168.0.249 appears to be down, skipping it.
+Host 192.168.0.250 appears to be up ... good.
+Initiating SYN Stealth Scan against 192.168.0.250 at 07:55
+Adding open port 9100/tcp
+Adding open port 79/tcp
+Adding open port 515/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 119 seconds to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Interesting ports on 192.168.0.250:
+(The 1655 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+79/tcp   open  finger
+515/tcp  open  printer
+9100/tcp open  jetdirect
+Device type: printer
+Running: Lexmark embedded
+OS details: Lexmark Optra R+ (4049-RA0) w. MarkNet XL card (firmware rev. 79.133.1
+TCP Sequence Prediction: Class=trivial time dependency
+                         Difficulty=1 (Trivial joke)
+IPID Sequence Generation: Incremental
+
+Host DESIGN (192.168.0.251) appears to be up ... good.
+Initiating SYN Stealth Scan against DESIGN (192.168.0.251) at 07:57
+Adding open port 445/tcp
+Adding open port 139/tcp
+Adding open port 135/tcp
+Adding open port 21/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 21 is open and port 1 is closed and neither are firewalled
+Insufficient responses for TCP sequencing (3), OS detection may be less accurate
+Interesting ports on DESIGN (192.168.0.251):
+(The 1655 ports scanned but not shown below are in state: closed)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Device type: general purpose
+Running: Microsoft Windows 95/98/ME|NT/2K/XP
+OS details: Microsoft Windows Millennium Edition (Me), Windows 2000 Professional or Advanced Server, or Windows XP
+IPID Sequence Generation: Incremental
+
+Host AGWORKSSERVER (192.168.0.252) appears to be up ... good.
+Initiating SYN Stealth Scan against AGWORKSSERVER (192.168.0.252) at 07:57
+Adding open port 6106/tcp
+Adding open port 445/tcp
+Adding open port 3389/tcp
+Adding open port 1025/tcp
+Adding open port 6101/tcp
+Adding open port 1433/tcp
+Adding open port 10000/tcp
+Adding open port 139/tcp
+Adding open port 1389/tcp
+Adding open port 3052/tcp
+Adding open port 135/tcp
+Adding open port 1026/tcp
+The SYN Stealth Scan took 0 seconds to scan 1659 ports.
+For OSScan assuming that port 135 is open and port 1 is closed and neither are firewalled
+Interesting ports on AGWORKSSERVER (192.168.0.252):
+(The 1647 ports scanned but not shown below are in state: closed)
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1025/tcp  open  NFS-or-IIS
+1026/tcp  open  LSA-or-nterm
+1389/tcp  open  iclpv-dm
+1433/tcp  open  ms-sql-s
+3052/tcp  open  PowerChute
+3389/tcp  open  ms-term-serv
+6101/tcp  open  VeritasBackupExec
+6106/tcp  open  isdninfo
+10000/tcp open  snet-sensor-mgmt
+Device type: general purpose
+Running: Microsoft Windows 2003/.NET
+OS details: Microsoft Windows .NET Enterprise Server (build 3604-3790)
+TCP Sequence Prediction: Class=truly random
+                         Difficulty=9999999 (Good luck!)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.253 appears to be up ... good.
+Initiating SYN Stealth Scan against 192.168.0.253 at 07:57
+Adding open port 1723/tcp
+Adding open port 23/tcp
+Adding open port 22/tcp
+Adding open port 80/tcp
+Adding open port 443/tcp
+The SYN Stealth Scan took 1 second to scan 1659 ports.
+For OSScan assuming that port 22 is open and port 1 is closed and neither are firewalled
+Interesting ports on 192.168.0.253:
+(The 1654 ports scanned but not shown below are in state: closed)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+23/tcp   open  telnet
+80/tcp   open  http
+443/tcp  open  https
+1723/tcp open  pptp
+Device type: general purpose
+Running: Linux 2.4.X|2.5.X
+OS details: Linux Kernel 2.4.0 - 2.5.20
+Uptime 25.862 days (since Wed Dec 08 11:17:23 2004)
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=2179686 (Good luck!)
+IPID Sequence Generation: All zeros
+
+Host 192.168.0.254 appears to be up ... good.
+Initiating SYN Stealth Scan against 192.168.0.254 at 07:58
+Adding open port 23/tcp
+Adding open port 80/tcp
+The SYN Stealth Scan took 13 seconds to scan 1659 ports.
+For OSScan assuming that port 23 is open and port 1 is closed and neither are firewalled
+Interesting ports on 192.168.0.254:
+(The 1657 ports scanned but not shown below are in state: closed)
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: encryption accelerator|switch
+Running: Cisco embedded, 3Com embedded
+OS details: Cisco VPN 3000 or 3Com 4924 GigE Switch
+Uptime 60.664 days (since Wed Nov 03 16:02:32 2004)
+TCP Sequence Prediction: Class=random positive increments
+                         Difficulty=35204 (Worthy challenge)
+IPID Sequence Generation: Incremental
+
+Host 192.168.0.255 seems to be a subnet broadcast address (returned 6 extra pings). Skipping host.
+Nmap run completed -- 255 IP addresses (38 hosts up) scanned in 1113.211 seconds

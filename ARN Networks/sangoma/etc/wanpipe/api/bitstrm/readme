@@ -1,0 +1,51 @@
+Bitstream Apps
+----------------
+
+
+bitstrm_switch:
+
+	Implements the bitstreaming switch between two 
+	interfaces.  
+	
+	All DS0 from first interface are transfered
+	to the second interface, plus DS1 and DS2 are 
+	incremented by 1 and 2 respectively.
+
+ 	All DS0 from second interface are transfered
+	to the first interface, plus DS3 and DS4 are 
+	incremented by 3 and 4 respectively.
+
+	Usage:
+
+	./bitstrm_switch -i <first if name> -c <first card name> \ 
+	                 -si <second if name > -sc <second card name> -r
+	
+	eg:
+	./bitstrm_switch -i wp4bstrm1 -c wanpipe4 -si wp5bstrm1 -sc wanpipe5 -r
+	
+
+bitstrm_txrx:
+
+	The bitstrm_txrx sends and receives a binary file.  Furthermore,
+	the rx binary file must contain numbers greater than 0x10.
+
+	The rx code will start receiving a binary stream once it
+	sees a first character greater than 0x10.  The idle character
+	must be set to 0 in /etc/wanpipe/wanpipe#.conf.
+
+	Usage:
+
+	./bitstrm_txrx -i <if name> -c <card name> -r -w -rxfile <filename> \
+	               -txfile <filename> -txsize 1000
+
+	eg:
+	./bitstrm_txrx -i wp1bstrm1 -c wanpipe1 -r -w -rxfile RXFILE \ 
+	               -txfile tx_ch_file.b -txsize 1000
+
+        Note: Create the tx_ch_file.b using the te1/bstrm_gen_file application.
+	      It is currently setup to create 2MB file containing all 0x10.
+
+
+
+	      
+

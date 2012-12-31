@@ -1,0 +1,27 @@
+This package was debianized by the alien program by converting
+a binary .rpm package on Fri,  3 Mar 2006 03:32:14 -0600
+
+Copyright: BSDish
+
+Information from the binary package:
+Name        : net-snmp                     Relocations: (not relocateable)
+Version     : 5.0.8                             Vendor: (none)
+Release     : 1                             Build Date: Tue 02 Sep 2003 07:22:43 PM CDT
+Install date: (not installed)               Build Host: localhost.localdomain
+Group       : System Environment/Daemons    Source RPM: net-snmp-5.0.8-1.src.rpm
+Size        : 8274284                          License: BSDish
+Packager    : The Net-SNMP Coders <http://sourceforge.net/projects/net-snmp/>
+URL         : http://net-snmp.sourceforge.net/
+Summary     : Tools and servers for the SNMP protocol
+Description :
+
+Net-SNMP provides tools and libraries relating to the Simple Network
+Management Protocol including: An extensible agent, An SNMP library,
+tools to request or set information from SNMP agents, tools to
+generate and handle SNMP traps, etc.  Using SNMP you can check the
+status of a network of computers, routers, switches, servers, ... to
+evaluate the state of your network.
+
+
+This package includes embedded perl support within the agent
+

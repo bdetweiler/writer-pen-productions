@@ -1,0 +1,49 @@
+#!/bin/sh
+
+# Variables Defined Therein
+. /var/ipcop/ethernet/settings
+
+# Flush Custom Input Rules
+/sbin/iptables -F CUSTOMINPUT
+/sbin/iptables -F CUSTOMFORWARD
+
+# Shorthand Helper
+IPT="/sbin/iptables"
+
+# echo-reply
+$IPT -A CUSTOMINPUT -i $RED_DEV -p icmp --icmp-type 0 -j DROP
+# echo-request
+$IPT -A CUSTOMINPUT -i $RED_DEV -p icmp --icmp-type 8 -j DROP
+
+# Now accept the three(3) good ones
+# destination-unreachable
+$IPT -A CUSTOMINPUT -i $RED_DEV -p icmp --icmp-type 3 -j ACCEPT
+# redirect
+$IPT -A CUSTOMINPUT -i $RED_DEV -p icmp --icmp-type 5 -j ACCEPT
+# time exceeded
+$IPT -A CUSTOMINPUT -i $RED_DEV -p icmp --icmp-type 11 -j ACCEPT
+
+# Drop all other ICMP type data
+$IPT -A CUSTOMINPUT -i $RED_DEV -p icmp -j DROP
+
+# Drop any tcp/udp packets to ports 135-137
+$IPT -A CUSTOMINPUT -i $RED_DEV -p tcp --dport 135:137 -j DROP
+$IPT -A CUSTOMINPUT -i $RED_DEV -p udp --dport 135:137 -j DROP
+
+
+# Restrict Outgoing Access - EXAMPLES
+# Allow full access for specific IPs
+# PC1 - 192.168.111.1
+# $IPT -A CUSTOMFORWARD -i $GREEN_DEV -s 192.168.111.1 -o $RED_DEV -j ACCEPT
+# Allow limited access for specific IPs 
+# in this case 192.168.111.3 tcp ports 20,21
+# $IPT -A CUSTOMFORWARD -i $GREEN_DEV -s 192.168.111.3 -o $RED_DEV -p tcp --dport 21 -j ACCEPT
+# $IPT -A CUSTOMFORWARD -i $GREEN_DEV -s 192.168.111.3 -o $RED_DEV -p tcp --dport 20 -j ACCEPT
+# Bar access for all other IPs
+# $IPT -A CUSTOMFORWARD -i $GREEN_DEV -s 192.168.1111.0/8 -o $RED_DEV -j DROP
+
+# Block incomming IP Ranges
+# $IPT -A CUSTOMFORWARD -i $RED_DEV -p tcp -m iprange --src-range 12.111.51.193-12.111.51.206 -j DROP
+
+# CUSTOM STUFF
+

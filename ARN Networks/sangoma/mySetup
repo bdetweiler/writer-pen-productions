@@ -1,0 +1,108 @@
+#!/bin/sh
+
+function install_all ()
+{
+	echo "Installing ${DISTR_NAME} Files ... !"
+
+
+###############################################################
+# util
+###############################################################
+
+	echo "Installing  ${DISTR_NAME} Utilities in $ROOT/usr/sbin"
+	cd $PROD_HOME/util
+	make install WAN_VIRTUAL=$ROOT > /dev/null 2> /dev/null
+
+	if [ "$PKG_NAME" = "wanpipe-lite" ]; then
+		cd $PROD_HOME
+		\cp -rf samples $ROOT/etc/wanpipe
+		install -D -m 755 $PROD_HOME/scripts/wanlite $ROOT/usr/sbin/wanlite
+		pause
+		return 0
+	fi
+
+###############################################################
+# ???
+###############################################################
+
+	install -D -m 755 $WANROUTER_STARTUP_SMPL $ROOT/$WANROUTER_STARTUP
+
+###############################################################
+# misc	
+###############################################################
+
+	cd $PROD_HOME/util/misc
+	make install WAN_VIRTUAL=$ROOT > /dev/null 2> /dev/null
+
+###############################################################
+# wanrouter.rc
+###############################################################
+
+	echo "Installing wanrouter.rc in $ROOT/etc/wanpipe"
+	cd $PROD_HOME
+	install -D -m 644 wanrouter.rc $ROOT/etc/wanpipe/wanrouter.rc
+
+###############################################################
+# libraries
+###############################################################
+	
+	echo "Installing wanpipe libraries in $ROOT/etc/wanpipe"
+	\mkdir -p $ROOT/etc/wanpipe/lib/
+	\cp -f $PROD_HOME/util/wancfg_legacy/lib/* $ROOT/etc/wanpipe/lib/
+
+###############################################################
+# firmware
+###############################################################
+
+	echo "Installing firmware in $ROOT/etc/wanpipe/firmware"
+	\cp -rf firmware $ROOT/etc/wanpipe/
+
+###############################################################
+# interfaces
+###############################################################
+
+	if [ ! -f $ROOT/etc/wanpipe/interfaces ]; then
+		\mkdir -p $ROOT/etc/wanpipe/interfaces
+	fi
+
+###############################################################
+# docs
+###############################################################
+
+	echo "Installing documentation in $ROOT/usr/share/doc/wanpipe"
+	if [ ! -d $ROOT/usr/share/doc/wanpipe ]; then
+		\mkdir -p $ROOT/usr/share/doc/wanpipe
+	fi
+	\cp -f doc/* $ROOT/usr/share/doc/wanpipe
+	\cp -f README* $ROOT/usr/share/doc/wanpipe
+
+###############################################################
+# api
+###############################################################
+
+	echo "Installing sample api code in $ROOT/etc/wanpipe/api"
+	\cp -rf api $ROOT/etc/wanpipe
+	\cp -rf samples $ROOT/etc/wanpipe
+
+###############################################################
+# scripts
+###############################################################
+
+	if [ ! -d $ROOT/etc/wanpipe/scripts ]; then
+		\mkdir -p $ROOT/etc/wanpipe/scripts 
+	fi
+
+###############################################################
+# driver headers
+###############################################################
+
+	echo "Installing driver headers in $ROOT/etc/wanpipe/api/include/linux"
+	if [ ! -d $ROOT/etc/wanpipe/api/include/linux ]; then
+		\mkdir -p $ROOT/etc/wanpipe/api/include/linux
+	fi
+
+	\cp -f $DRIVER_UPDATE_DIR/include/* $ROOT/etc/wanpipe/api/include/linux/.
+	
+	pause
+	return 0
+}

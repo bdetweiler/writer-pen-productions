@@ -1,0 +1,48 @@
+#!/bin/sh
+# blockip
+# Front end to IPtables. Use it to block IP addresses and ranges.
+# By Brian Detweiler
+
+# Create backups. We like backups.
+date=`date +%s`;
+if [ -f /root/backup/rc.local.bak ] ; then
+	cp /etc/rc.d/rc.local /root/backup/rc.local.$date ;
+else
+	mkdir /root/backup ;
+	cp /etc/rc.d/rc.local /root/backup/rc.local.bak ;	
+fi
+
+echo 'Block single IP - [1]' ;
+echo 'Block IP range - [2]' ;
+echo 'Block IP range (netmask notation) - [3]' ;
+echo ' ' ;
+echo ' ' ;
+echo 'Enter your selection [1]: ';
+
+read option;
+	case "$option" in
+		1)
+			echo -n 'Enter IP to block: ';
+			read ip;
+			echo "\$IPT -A CUSTOMFORWARD -i \$RED_DEV -p tcp -s $ip -j DROP" >> /etc/rc.d/rc.local ;
+		;;
+		2)
+			echo -n 'Enter start IP: ';
+			read ip1;
+			echo -n 'Enter end IP: ';
+			read ip2;
+			echo "\$IPT -A CUSTOMFORWARD -i \$RED_DEV -p tcp -m iprange --src-range $ip1-$ip2 -j DROP" >> /etc/rc.d/rc.local ;
+		;;
+		3)
+			echo -n 'Enter IP range in netmask notation (192.168.1.1/28)';
+			read ip;
+			echo "\$IPT -A CUSTOMFORWARD -i \$RED_DEV -s $ip -j DROP" >> /etc/rc.d/rc.local ;
+		;;
+		*)
+			echo 'INVALID ENTRY' ;
+			exit;	
+	esac
+/etc/rc.d/rc.local ;
+cat /etc/rc.d/rc.local ;
+echo 'Your IPTABLES has been updated.' ;
+exit;

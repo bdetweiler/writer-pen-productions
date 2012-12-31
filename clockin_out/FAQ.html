@@ -1,0 +1,643 @@
+<h3><a href="help.html#Intro">1 - Introduction to Clockin/Out</a></h3>
+<ul>
+<li><a href="help.html#WhatIs"      >1.1 - What is Clockin/Out?</a>
+<li><a href="help.html#System"      >1.2 - On what system does Clockin/Out run?</a>
+<li><a href="help.html#License"     >1.3 - What licenses does Clockin/Out use?</a>
+<li><a href="help.html#WhySwitch"   >1.4 - Why switch from manual time cards to an automated system?</a>
+<li><a href="help.html#Support"     >1.5 - Who maintains Clockin/Out?</a>
+
+</ul>
+
+<h3><a href="help.html#Other">2 - Other Information Resources</a></h3>
+<ul>
+<li><a href="help.html#PHP"      >2.1 - PHP.net</a>
+<li><a href="help.html#MySQL"    >2.2 - MySQL.com</a>
+<li><a href="help.html#Apache"   >2.3 - Apache.org</a>
+<li><a href="help.html#OpenBSD"  >2.4 - OpenBSD.org</a>
+</ul>
+
+<h3><a href="help.html#General">3 - General Employees</a></h3>
+<ul>
+<li><a href="help.html#Login"     >3.1 - Logging in</a>
+<li><a href="help.html#ClockingIn">3.2 - Clocking in</a>
+<li><a href="help.html#WorkHours" >3.3 - Displaying your work hours</a>
+<li><a href="help.html#TimeOff"   >3.4 - Logging time off</a>
+<li><a href="help.html#MakeNote"  >3.5 - Making a note</a>
+<li><a href="help.html#ChangePass">3.6 - Changing your password</a>
+<li><a href="help.html#Logout"    >3.7 - Logging out</a>
+<li><a href="help.html#Clockout"  >3.8 - Clocking out</a>
+</ul>
+
+<h3><a href="help.html#Admin">4 - Administrators/Supervisors</a></h3>
+<ul>
+<li><a href="help.html#AdminLogin"     >4.1 - Logging in</a>
+<li><a href="help.html#AdminChangepass">4.2 - Changing your password</a>
+<li><a href="help.html#AdminDisplay"   >4.3 - Displaying users' work hours</a>
+<li><a href="help.html#AdminReports"   >4.4 - Displaying reports</a>
+<li><a href="help.html#AdminAudit"     >4.5 - Auditing an account</a>
+<li><a href="help.html#AdminCommission">4.6 - Entering a commission</a>
+<li><a href="help.html#AdminResetPass" >4.7 - Resetting a user's password</a>
+<li><a href="help.html#AdminAddUser"   >4.8 - Adding and removing users</a>
+<li><a href="help.html#AdminViewComm"  >4.9 - Viewing a user's commissions</a>
+<li><a href="help.html#AdminWho"       >4.10 - Seeing who is currently clocked in</a>
+<li><a href="help.html#AdminLogout"    >4.11 - Logging out</a>
+</ul>
+
+<h3><a href="help.html#Misc">5 - Miscellaneous Questions</a></h3>
+<ul>
+<li><a href="help.html#HowTime"     >5.1 - How does Clockin/Out keep track of time?</a>
+<li><a href="help.html#Crash"       >5.2 - What if the server or Clockin/Out crashes?</a>
+<li><a href="help.html#InetDown"    >5.3 - What if my internet connection is down?</a>
+<li><a href="help.html#Forget"      >5.4 - What if I forget to clock in or out?</a>
+<li><a href="help.html#Home"        >5.5 - Can I clock in or out from home?</a>
+<li><a href="help.html#Dishonesty"  >5.6 - Can another employee clock me in or out?</a>
+<li><a href="help.html#Spy"         >5.7 - Can another employee see my hours?</a>
+<li><a href="help.html#RememberPass">5.8 - Should I let Internet Explorer/Netscape/Mozilla remember my password?</a>
+<li><a href="help.html#RemovePass"  >5.9 - My web browser automatically puts my password in for me, and I don't want it to.
+How do I disable this and remove the stored password?</a>
+</ul>
+
+        <!--<h3><a href="help.html#Troubleshooting">6 - Troubleshooting</a></h3>-->
+
+        <!--<ul>-->
+        <!--<li><a href="faq6.html#TroubleLogin">6.1 - Trouble logging in</a>-->
+        <!--<li><a href="faq6.html#Images"      >6.2 - Images don't show up</a>-->
+        <!--<li><a href="faq6.html#ErrorMsgs"   >6.3 - Various Error Messages</a>-->
+        <!--<li><a href="faq6.html#SQL"         >6.4 - SQL syntax errors</a>-->
+        <!--</ul>-->
+<a name="Intro"></a>
+<p><big><strong>1. Introduction</p></big></strong>
+
+<a name="WhatIs"></a>
+<p><big><strong>1.1 What is Clockin/Out?</p></big></strong>
+<blockquote>
+Clockin/Out is a PHP script with a MySQL backend that is used primarily for timestamp recording.
+Think of it as you would a regular time card. On both systems, times are recorded when you
+press the button. On both systems, times are shown in 24-hour time with 100 minutes per hour
+instead of the usual 60. Both systems have roughly an equal ammount, if not the same ammount of
+weaknesses and strengths. This FAQ will go over some of those. <br><br>For those wondering:
+the name Clockin/Out is a play on words. Think of it as "Clockin' Out" and "Clock In/Out".
+</blockquote>
+
+<a name="System"></a>
+<p><big><strong>1.2 On what systems does Clockin/Out run?</p></big></strong>
+<blockquote>
+        While Clockin/Out runs on its own server, you can use it from any machine with a web browser on the
+        Aurora Cooperative network. The script itself runs on OpenBSD, a Unix-like BSD variant. The avarage
+        user needn't be concearned with this though. The important thing is, if your machine has a web
+        browser (Internet Explorer, Netscape Navigator, Mozilla, Mozilla Firefox, Opera, etc.) you can use it.
+</blockquote>
+
+<a name="License"></a>
+<p><big><strong>1.3 What licenses does Clockin/Out use?</p></big></strong>
+<blockquote>
+        Clockin/Out itself is produced under the
+        <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>.
+        The GNU General Public License (GPL) in a nutshell states that, should this script be distributed or sold in any way,
+        the source code must be included. Why the GPL? There are many reasons for Open Source Software,
+        but the primary one in this instance because of the backend database, <a href="http://www.mysql.com">MySQL</a>.
+        MySQL is dually-licensed, meaning it can be used with one or the other.
+        <br><br>
+        In order to use it freely under the GPL, the application using it must also be licensed under the GPL.
+        <br><br>
+        <a href="http://www.php.net">PHP</a> is licensed under the
+        <a href="http://www.php.net/license/3_0.txt">PHP License</a>, a less restrictive
+        license which states that you may distribute your software with or without source code. It is
+        compatible with the GPL.
+        <a href="http://www.apache.org">Apache</a> is the worlds most popular web server which runs on a variety
+        of platforms, including Windows, Linux, FreeBSD, and, in this case, OpenBSD. It is freely available under the
+        <a href="http://www.apache.org/licenses">Apache License</a>. It is a GPL compatible license.
+        <br><br>
+        The operating system on which Clockin/Out runs is OpenBSD. It is made available under the
+        <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>, and can be found at
+        <a href="http://www.openbsd.org">http://www.openbsd.org</a>.
+</blockquote>
+
+<a name="WhySwitch"></a>
+<p><big><strong>1.4 Why switch from manual time cards to an automated system.</p></big></strong>
+<blockquote>
+        This question has been raised by a few individuals. The answer is "efficiency." Under the current
+        system, it takes days to get all the time cards in, and then our employees have to figure the times
+        manually using adding machines. This is a tedious job. One that can easily be remedied with the help
+        of technology.
+        <br><br>
+        Though this may seem like an unnecessary change to some, from a CEO's standpoint, it can save time
+        and money, and in the long run, help Aurora Cooperative to continue moving forward in Agricultural
+        Business.
+</blockquote>
+
+<a name="Support"></a>
+<p><big><strong>1.5 Who maintains Clockin/Out?</p></big></strong>
+<blockquote>
+        The author and maintainer of Clockin/Out is Brian Detweiler.
+        Brian served as an intern for Aurora Cooperative during the summer of 2004. Please send bugs or
+        other problems with Clockin/Out to <a href="mailto:bdetweiler@gmail.com">bdetweiler@gmail.com</a>.
+        <br><br>
+        Brian is a student at the University of Nebraska at Omaha, likes programming, has a sense of humor,
+        and enjoys talking in third person.
+</blockquote>
+
+<a name="Other"></a>
+<p><big><strong>2. Other Information Resources</p></big></strong>
+
+<a name="PHP"></a>
+<p><big><strong>2.1 PHP.net</p></big></strong>
+<blockquote>
+        PHP is an Open Source scripting language highly suitable for the Web. It works well in conjunction with
+        MySQL and Apache. The trio have been dubbed "AMP" for Apache/MySQL/PHP. The PHP website can be found at
+        <a href="http://www.php.net">http://www.php.net</a>.
+</blockquote>
+
+<a name="MySQL"></a>
+<p><big><strong>2.2 MySQL.com</p></big></strong>
+<blockquote>
+        MySQL is an extremely popular Open Source database system. It is very efficient and can be used for
+        a variety of applications, with a variety of front-end languages, such as C++, Java, and of course,
+        PHP. MySQL can be found at <a href="http://www.mysql.com">http://www.mysql.com</a>.
+</blockquote>
+
+<a name="Apache"></a>
+<p><big><strong>2.3 Apache.org</p></big></strong>
+<blockquote>
+        Apache is the worlds most popular web server. More information can be found at
+        <a href="http://www.apache.org">http://www.apache.org</a>.
+</blockquote>
+
+<a name="OpenBSD"></a>
+<p><big><strong>2.4 OpenBSD.org</p></big></strong>
+<blockquote>
+        OpenBSD is a free Unix-like BSD variant which takes a proactive stance on security. It is largely
+        considered one of the most secure Operating Systems in the world. More information is available
+        at <a href="http://www.openbsd.org">http://www.openbsd.org</a>.
+</blockquote>
+
+<a name="General"></a>
+<p><big><strong>3. General Employees</p></big></strong>
+
+<a name="Login"></a>
+<p><big><strong>3.1 Logging in</p></big></strong>
+<blockquote>
+        When logging in for the first time, your password will be identical to your username.
+        Your username is your last name followed by your first innitial. Those with identical last
+        names and identical first innitials have been taken into consideration. In this case, the person
+        whose first name comes alphabetically last will use the first two letters of their first name.
+        <br><br>
+        Confused? Here's some examples:
+        <br><br>
+        <table cellpadding="5" border="0">
+                <tr align="left">
+                        <td align="left">
+                                <b>Last Name</b>
+                        </td>
+                        <td align="left">
+                                <b>First Name</b>
+                        </td>
+                        <td align="left">
+                                <b>Username</b>
+                        </td>
+                        <td align="left">
+                                <b>Password</b>
+                        </td>
+                </tr>
+                <tr align="left">
+                        <td align="left">
+                                Doe
+                        </td>
+                        <td align="left">
+                                Joan
+                        </td>
+                        <td align="left">
+                                doej
+                        </td>
+                        <td align="left">
+                                doej
+                        </td>
+                </tr>
+                <tr align="left">
+                        <td align="left">
+                                Doe
+                        </td>
+                        <td align="left">
+                                John
+                        </td>
+                        <td align="left">
+                                doejo
+                        </td>
+                        <td align="left">
+                                doejo
+                        </td>
+                </tr>
+        </table>
+        When logging in for the first time, type in your username and password (both identitical), and press the
+        "Submit" button. If you typed everything in correctly, you should see a page telling you that your password
+        has expired. You are required to change it. Passwords must be six (6) characters in length, and may consist
+        of alpha-numeric characters and are CASE SENSITIVE. Keep this in mind when choosing a password.
+        <br><br>
+        When you have successfully changed your password, a screen will tell you so, and will redirect you to the
+        login page. You must now login with your new password. This is done to ensure you have typed your password
+        correctly. If you cannot get back in, doublecheck your typing. Make sure you are typing in the correct
+        case. Is caps lock on? Should it be? If all else fails, a supervisor may reset your password to
+        your username and you can try again.
+</blockquote>
+
+<a name="ClockingIn"></a>
+<p><big><strong>3.2 Clocking in</p></big></strong>
+<blockquote>
+        To clock in, simply go to the <a href="http://192.168.0.41/login.php">login page</a>, enter your
+        username and password, select the "Clock In" radio button, check "Double Time" if necessary, and click the
+        "Submit" button.
+        <br><br>
+        Once you press the "Submit" button, your time is recorded on the server. You will be taken to the main
+        login page where any pertinant information will be displayed to you, and you can view your work hours,
+        and do various other accounting from there.
+</blockquote>
+
+<a name="WorkHours"></a>
+<p><big><strong>3.3 Displaying your work hours</p></big></strong>
+<blockquote>
+        Once you are logged into the system, you may check your work hours. The display you see when logging in is
+        your hours for the current pay period. If you don't see anything, then you haven't logged any hours for the
+        pay period yet.
+        <br><br>
+        If you are clocked in and don't see anything, you must wait until you clock out to see your entry. This is
+        different from the manual time cards in that on a manual card, you can see what time you clocked in at
+        immediately. The reason this is different is because Clockin/Out computes your hours based on your
+        clock in time and clock out time. With no clock out time, it has nothing to compute.
+</blockquote>
+
+<a name="TimeOff"></a>
+<p><big><strong>3.4 Logging time off</p></big></strong>
+<blockquote>
+        To log time off, such as vacations, personal holidays, sick days, or funerals, you will need to log in. If you
+        are already clocked in, you may just click the "Neither" button to login without doing anything.
+        <br><br>
+        Once you are in, click on the <img alt="Log Time Off" src="images/log_time_off.png"> tab. This will
+             bring you to the page for logging days off. To take a single day off, you only need to enter
+        the date into the "Start Date" field, select the type of hours, and select how many hours (4 hours =
+        half day; 8 hours = full day). Then press the "Submit" button.
+        <br><br>
+        Dates must be entered in this format: YYYY-MM-DD
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example: 2004-09-07, would be September 7th, 2004.
+        <br><br>
+        To take multiple days off, you need to enter an "End Date" in addition to a start date. This means
+        you are taking a sequence of days off. For example, if you wanted to take 3 days off in a row, you
+        would type the first date in the "Start Date" field, and the last day in the "End Date" field. You may
+        also enter an end date for a single day. For a single day, you would enter the same date in both
+        fields, however this is redundant and unnecessary.
+        <br><br>
+        You may log days off for the past, present, or future.
+</blockquote>
+
+<a name="MakeNote"></a>
+<p><big><strong>3.5 Making a note</p></big></strong>
+<blockquote>
+        There is a feature in Clockin/Out that allows you to make a note on an existing entry.
+        Why would you want to do this? There are a host of reasons. Sometimes you just need to keep
+        your boss updated on things. Sometimes you need to make a specific comment about an entry, like
+        where you were. If you worked at a different location, you could put that in there. You can do the
+        same thing on a time card. Remember, Clockin/Out was designed to mimmick the time card system. The
+        goal is to incorporate all of the same features of a standard time card system.
+        <br><br>
+        To make a note, click the <img alt="Make A Note" src="images/annotate.png"> tab. Select the entry you
+        wish to annotate from the drop down box. Write your note in the text field, and press the "Submit"
+        button. You must keep entries to 180 characters, due to database restrictions. This should be more
+        than enough to leave a descriptive note about your entry.
+</blockquote>
+
+
+<a name="ChangePass"></a>
+<p><big><strong>3.6 Changing your password</p></big></strong>
+<blockquote>
+        If you wish to change your password, you may do so by going to the <img alt="Change Password"
+        src="images/changepassword.png"> tab. As stated earlier, the first time you log in, this is
+        mandatory. After that, you may chose whatever password you wish. If you do choose the same
+        password as your name, you will be forced to change it the next time you login. Clockin/Out does not
+        allow you to have identical username/password combinations. This is obviously for security.
+</blockquote>
+
+<a name="Logout"></a>
+<p><big><strong>3.7 Logging out</p></big></strong>
+<blockquote>
+        When you are finished with your session, you may either close the browser window, or click the
+        <img alt="Logout" src="images/logout.png"> tab. When you click the logout tab, you will be
+        redirected to the login page.
+</blockquote>
+
+<a name="ClockOut"></a>
+<p><big><strong>3.8 Clocking out</p></big></strong>
+<blockquote>
+        Clocking out is virtually the same procedure as clocking in, except you select the "Clock Out" radio
+        button instead of the "Clock In" one. Once you have entered your correct username and password and
+        selected "Clock Out", you may press the "Submit" button. The instant you press it, you will be clocked
+        out.
+        <br><br>
+        You are then taken to the main work hours screen and told the time when you were clocked out.
+</blockquote>
+
+<a name="Admin"></a>
+<p><big><strong>4. Administrators/Supervisors</p></big></strong>
+<blockquote>
+        Throughout this text, and in Clockin/Out, the terms "Administrator" and "Supervisor" are used
+        interchangeably. If you are a Supervisor, you are an administrator, and vise-versa. If you are
+        a Supervisor, you are responsible for your employees. You must make sure they clock in and out on time,
+        and that they are not abusing the system.
+        <br><br>
+        You are also responsible for fixing any mistakes in their entries. These steps will be discussed
+        below.
+</blockquote>
+
+<a name="AdminLogin"></a>
+<p><big><strong>4.1 Logging in</p></big></strong>
+<blockquote>
+        The admin side of Clockin/Out is different from the employee side. It uses two seperate accounts.
+        Though your username will be the same, you may opt to have a different password. It is recommended that
+        you do so, but is not required. The first time you login to the admin side, your password is your username.
+        If your name is John Doe, your username is "doej" and your password is "doej" the first time you log in.
+        (See <a href="help.html#Login">the general employee login procedure</a>).
+        <br><br>
+        Once you have logged in, you will be required to change your password. It can be a combination of letters
+        and numbers, and must be at least 6 characters long. Why so long? Most websites, such as
+        <a href="http://www.hotmail.com">MSN Hotmail</a>, <a href="http://mail.yahoo.com">Yahoo!</a>, and
+        others require at least 6 characters for your password. Most online banking requires 8 characters.
+        6 is pretty standard.
+        <br><br>
+        After you change your password, you will be logged out and redirected to the employee login page. Click
+        on the "Administrators click HERE" link. Login as before with your new password. You are now free to
+        go about your daily business.
+</blockquote>
+
+<a name="AdminChangePass"></a>
+<p><big><strong>4.2 Changing your password</p></big></strong>
+<blockquote>
+        Anytime you like, you may change your password. Click on the <img alt="Change Password"
+        src="images/change_password.png"> tab to do so. You will be logged out and redirected to the employee
+        login page. Click on the "Administrators click HERE" link. Login as before with your new password.
+</blockquote>
+
+<a name="AdminDisplay"></a>
+<p><big><strong>4.3 Displaying users' work hours</p></big></strong>
+<blockquote>
+        When you login as an administrator, assuming you have already logged in once and changed your
+        password, the first thing you will see is the "Work Hours" screen. Here you may view employees'
+        work hours. To do so, select the employee you wish to view from the drop down list. Employees
+        are displayed by username, which is their last name and first innitial. You can jump to
+        their name faster by clicking on a name in the list and typing the first letter of their last name.
+        It will jump to the first person with that letter in their last name.
+        <br><br>
+        After you have selected them from the drop down box, you may press "Go" and it will display their
+        work hours for last pay period. If you wish to view their work hours for <i>this</i> pay period, or
+        for any other duration of time, select it from the drop down list above the employee's name.
+        All options are self-explanatory. To display the work hours for the entire month, select "Entire Month".
+        Do the same for 30 days, 60 days, 90 days, 180 days, year to date, or previous year.
+</blockquote>
+
+<a name="AdminReports"></a>
+<p><big><strong>4.4 Displaying reports</p></big></strong>
+<blockquote>
+        This option is available to privilaged users (if you don't see the option, you don't have privilages).
+        The purpose is to show a summary of all users' total work hours for the last pay period, and the one
+        before that.
+        <br><br>
+        If you have this option, you will see the following on the work hours page:
+        <br><br>
+        <b>Reports: <u>NEW</u> &nbsp;&nbsp;<u>OLD</u></b>
+        <br><br>
+        The <i>new</i> report will display a complete employee listing of total work hours for the latest
+        pay cycle. The <i>old</i> option will show the pay period before that. They are in printable form,
+        and it is advised that you do this every pay period, so as to have a hard copy on file.
+</blockquote>
+
+<a name="AdminAudit"></a>
+<p><big><strong>4.5 Auditing an account</p></big></strong>
+<blockquote>
+        This is one of the most important features of the administrator side. You, as an administrator/supervisor,
+        will need to be able to audit your employees' accounts for various reasons. For example: An employee
+        forgets to clock in one day. It is your job to go in and add an entry for him or her. What if an
+        employee forgets to clock <i>out</i>? You will need to correct that entry for them. The process is
+        explained in detail below:
+        <br><br>
+        <b>Selecting users:</b><br>
+        If you have selected a user to display their work hours, then you need only to click on the
+        <img alt="Audit an Account" src="images/audit_an_account.png"> tab, and that employee's work hours
+        will be brought up for auditing. If you have not selected an employee, you will be asked to select
+        one first. You may switch to a new employee at any time.
+        <br><br>
+        <b>Deleting entries:</b><br>
+        Why would one want to delete an entry? If someone has the power to add an entry, they sure better
+        have the power to delete it. You may select multiple entries at once. Hold down the ctrl key while
+        clicking, or to select multiple entries in a row, click on the first entry, hold the shift key, and
+        click on the last entry. Those entries and all the entries in between will be selected. Entries marked
+        with three astrisks (***) are flagged with errors. This is meant to be more helpful for the
+        administrators who will need to quickly find these entries.
+        <br><br>
+        <b>Correcting an entry:</b><br>
+        Here is the scenario: Bob clocks in late. Bob clocks out on time. Bob wants to be paid for what he
+        actually worked. You are able to fix this. First, you select Bob's entry from the drop down box.
+        Then, because you want to correct his clock <i>in</i> time, you enter the correct clock in time in the
+        first box. This is given in the following format: YYYY-MM-DD HH:MM:SS
+        <br><br>
+        example: 2004-09-07 08:00:00 would be September 7th, 2004, 8:00 am.
+        <br><br>
+        Then, because his clock <i>out</i> time is correct, you leave the box below it as-is. Press "Correct"
+        and, assuming you typed everything in right, the entry will have been corrected.
+        <br><br>
+        Here is another scenario: Bob clocks in on time. Bob clocks forgets to clock out. Bob sees a big
+               error flag warning him that he has been clocked in for more than 18 hours. To fix this, you
+        would select his entry from the drop down box. Bob has an error flag, so the entry will be
+        marked with three astrisks (***) to make it easier to find. Because his clock <i>in</i> time is correct,
+        you leave that as-is. You would then enter the correct clock <i>out</i> time in the box below it.
+        Once you have entered that, press "Correct" and you're set.
+        <br><br>
+        One final scenario: Bob is having a bad day. He forgot to clock in, so he clocked in as soon as he
+        remembered. Bob also forgot to clock out and was left clocked in all night. How do we fix this?
+        This is roughly a combination of the two previous scenarios. Select the offending entry from the
+        drop down list. Enter the correct clock <i>in</i> time in the top box. Enter the correct clock
+        <i>out</i> time in the box below it. Select "Remove Error Flag" to get rid of his error flag, and
+        press "Correct". Now you're on your way to making Bob's day better.
+        <br><br>
+        If at any time you wish to remove an error flag, you may do so by selecting the entry (obviously you
+        would want to select an entry with astrisks (***), because these are the flagged ones) from the
+        drop down box, checking the "Remove Error Flag" checkbox, and pressing "Correct".
+        <br><br>
+        You may also alter their hours from "regular time" to "double time" and vise-versa, should the need
+        arise.
+        <br><br>
+        <b>Adding an entry:</b><br>
+        Adding an entry is different from correcting one, in that you are actually adding an entry from
+        scratch, rather than manipulating an existing one. In this field, you will need to enter both a
+        clock <i>in</i> time, and a clock <i>out</i> time. For an example of the time/date format, see
+        <b>Correcting an entry</b> above. When you press "Add", your entry will be added into the database.
+        Should this not be to your liking, you need only to delete it with the <b>Delete entry</b> option.
+        See <b>Deleting an entry</b> for details.
+        <br><br>
+        <b>Entering paid time off:</b><br>
+        This option was originally included to make up for the fact that employees were not allowed to
+        log time off for days in the past, including the present day. This has been changed to allow
+        employees to enter days in the past, present, and future; however, the administrator should
+        have control over this as well. For more information on how to use this tool, see
+        <a href="help.html#TimeOff">Logging time off</a> on the employee side.
+</blockquote>
+
+<a name="AdminCommission"></a>
+<p><big><strong>4.6 Entering a commission</p></big></strong>
+<blockquote>
+        Some employees work on commission. To enter a commission for an employee, simply click on the
+        <img alt="Enter a Commission" src="images/enter_commission.png"> tab. Once there, select the
+        employee who will be receiving the commission. Then select the date. The dates are the beginning
+        of each pay cycle. You can only enter one commission for each pay cycle, so if you need to enter
+        more than one, you will have to add them up before entering them. Next, enter the ammount of the
+        commission in dollars in this format: $$$$.cc, where $$$$ is Dollars, and cc is cents. Example:
+        1499.98 is One thousand four hundred ninety-nine dollars and ninety-eight cents. When you are satisfied
+        with your entry, press "Submit" and your commission will be entered.
+</blockquote>
+
+<a name="AdminResetPass"></a>
+<p><big><strong>4.7 Resetting a user's password</p></big></strong>
+<blockquote>
+        If an employee/supervisor forgets their password, you have the ability to reset it to their username.
+        Just click on the <img alt="images/resetuserpass.png"> tab. Select the name of the employee you wish
+        to reset. Now choose whether to reset only the employee side of the account, only the supervisor side
+        of the account, or both. Then press the "Submit" button. Their password has been reset to their username,
+        and they must login and change it like they did the first time they logged in.
+</blockquote>
+
+<a name="AdminAddUser"></a>
+<p><big><strong>4.8 Adding and removing users</p></big></strong>
+<blockquote>
+        This option is only available to privilaged users. The reason for this is that if a user is
+        removed, they are <i>completely</i> removed from the system. Work hours and all. Therefore this
+        is not something to be taken lightly. You should make absolutely certain that you do not need this
+        employee in the system anymore. To remove a user, select them from the drop down list, double and triple
+        check that you have the right employee, and press "Remove User".
+        <br><br>
+        To add a user, you simply need to enter their username, their first name, and their last name,
+        check the checkbox if you wish them to be a supervisor, and press "Add User". If you forgot to add
+        them as a supervisor, you may go back and enter them in again, this time checking the check box. You
+        will be given an error that this user already exists, then it will confirm that they have been entered
+        into the admin database. This indicates a successful entry.
+</blockquote>
+
+<a name="AdminViewComm"></a>
+<p><big><strong>4.9 Viewing a user's commissions</p></big></strong>
+<blockquote>
+        To view a user's commissions, you need to be in the work hours menu. Click on the
+        <img alt="Work Hours" src="images/work_hours.png"> tab. Select them from the drop down list.
+        Select how you want to display hours, if necessary. Click "Go". Click the
+        <img alt="Dollar Sign" src="images/dollarsign.png"> at the bottom of the work hours, and it will
+        pop up another menu. Select the pay cycle for which you want to view the commissions. It will
+        then tell you if there is a commission for this user on the pay cycle you selected.
+        <br><br>
+        When finished, the reports page will include all commissions for the pay cycle. The reports page
+        is only for privilaged users.
+</blockquote>
+
+<a name="AdminWho"></a>
+<p><big><strong>4.10 Seeing who is currently clocked in</p></big></strong>
+<blockquote>
+        A useful tool to help diagnose problems, as well as give you the ability to determine which of
+        your employees are and are not currently clocked in, is the "WHO" page. You will need to be at the
+        "Work Hours" page. Click on the        <img alt="Work Hours" src="images/work_hours.png"> tab. At the bottom
+        of the screen, you will see a link that says "See <u>WHO</u> is currently clocked in." Click on the
+        "WHO" link, and a window will pop up telling you who is currently clocked in.
+        <br><br>
+        It is up to you to determine the use of this feature. If you don't know what to use it for, you don't
+        need it.
+</blockquote>
+
+<a name="AdminLogout"></a>
+<p><big><strong>4.11 Logging out</p></big></strong>
+<blockquote>
+        To logout of the system, simply click on the <img alt="Logout" src="images/logout.png"> tab, or
+        close your browser window. When you click the logout tab, you will be redirected to the
+        employee login page.
+</blockquote>
+
+<a name="Misc"></a>
+<p><big><strong>5. Miscellaneous</p></big></strong>
+<blockquote>
+        This is where miscellaneous frequently asqued questions will be answered.
+</blockquote>
+
+<a name="HowTime"></a>
+<p><big><strong>5.1 How does Clockin/Out keep track of my time?</p></big></strong>
+<blockquote>
+        Clockin/Out is web-based implementation of a time card system. When you press the "Submit" button
+        on the login page and clock in, the server records that exact time into a database. It uses
+        time based off of server it runs on. You can not control that time.
+</blockquote>
+
+<a name="Crash"></a>
+<p><big><strong>5.2 What if the server or Clockin/Out crashes?</p></big></strong>
+<blockquote>
+        Should the application crash, the server only needs to be reset. If the server crashes, rebooting
+        does not work, and all the information is lost, the database is backed up nightly and taken off-site.
+        It will be possible to restore the old information. Should that fail, work hours should have been printed
+        out on a regular basis so as to have hard copies on file.
+        <br><br>
+        During any down-time, times can be recorded manually on the old time cards, and entered later.
+</blockquote>
+
+<a name="InetDown"></a>
+<p><big><strong>5.3 What if my internet connection is down?</p></big></strong>
+<blockquote>
+        As stated above, you would simply record your times manually on the old time cards and enter them later.
+        No big deal.
+</blockquote>
+
+<a name="Forget"></a>
+<p><big><strong>5.4 What if I forget to clock in or out?</p></big></strong>
+<blockquote>
+        Your time can be entered manually by your supervisor. If your supervisor has questions about this, they
+        should read the <a href="help.html#Admin">Administrator/Supervisor</a> section, particularly the section
+        on <a href="help.html#AdminAudit">auditing an account</a>.
+</blockquote>
+
+<a name="Home"></a>
+<p><big><strong>5.5 Can I clock in or out from home?</p></big></strong>
+<blockquote>
+        No. You must be on the Aurora Cooperative network, either locally, or through a VPN connection.
+</blockquote>
+
+<a name="Dishonesty"></a>
+<p><big><strong>5.6 Can another employee clock me in or out?</p></big></strong>
+<blockquote>
+        Of course. If you give them your password. This is the equivalent to asking an employee to punch
+        your card after you've left for an hour. As stated above, this system contains almost all of the
+        same pros/cons as the manual system.
+</blockquote>
+
+<a name="Spy"></a>
+<p><big><strong>5.7 Can another employee see my hours?</p></big></strong>
+<blockquote>
+        It depends. The answer is yes, if they have your password, or if you left your account logged in
+        and walked away. The answer is also yes if they are a supervisor. Otherwise, no.
+</blockquote>
+
+<a name="RememberPass"></a>
+<p><big><strong>5.8 Should I let Internet Explorer/Netscape/Mozilla remember my password?</p></big></strong>
+<blockquote>
+        If you do, others will be able to log into your account if they have access to your computer
+        (see above). It can be a convenience, or a security vulnerability. If you are a supervisor, the answer
+        is no. Regular employees should use their better judgement with this one.
+</blockquote>
+
+<a name="RemovePass"></a>
+<p><big><strong>5.9 - My web browser automatically puts my password in for me, and I don't want it to. How do I disable this and remove the stored password?</p></big></strong>
+<blockquote>
+        In Internet Explorer, click on Tools, then click on "Internet Options". Click on the "Content" tab, and click
+        the AutoComplete button. Uncheck the AutoComplete boxes so it won't ask again, and click the "Clear Passwords"
+        button.
+        <br><br>
+        In Netscape Navigator 7.1, click on Edit, then click on "Preferences". Click on the "Privacy and Security"
+        menu. Click on the "Passwords" option. Click the "Manage Stored Passwords" button. Remove the password
+        you want to remove. Uncheck the "Remember Passwords" box.
+</blockquote>
+
+
+
+
+
+
+
+</html>
